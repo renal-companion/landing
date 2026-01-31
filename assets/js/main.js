@@ -155,5 +155,44 @@ document.querySelectorAll('a[href*="download"], a[href*=".apk"]').forEach(link =
 });
 
 // Console message
-console.log('%c🏥 Renal Companion Landing Page - Operational', 'font-size: 16px; font-weight: bold; color: #0D7373;');
 
+// Download Modal Handler
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('downloadModal');
+    const downloadBtns = document.querySelectorAll('.download-btn');
+    const closeBtn = modal?.querySelector('.modal-close');
+    const overlay = modal?.querySelector('.modal-overlay');
+
+    // Show modal when download button is clicked
+    downloadBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (modal) {
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            }
+        });
+    });
+
+    // Close modal when close button is clicked
+    closeBtn?.addEventListener('click', () => {
+        modal.style.display = 'none';
+        document.body.style.overflow = ''; // Restore scrolling
+    });
+
+    // Close modal when overlay is clicked
+    overlay?.addEventListener('click', () => {
+        modal.style.display = 'none';
+        document.body.style.overflow = ''; // Restore scrolling
+    });
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal?.style.display === 'flex') {
+            modal.style.display = 'none';
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+    });
+});
+
+console.log('%c✅ Renal Companion - All Systems Active', 'color: #10B981; font-weight: bold; font-size: 14px;');

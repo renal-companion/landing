@@ -450,6 +450,11 @@ const translations = {
         res_btn_copy: "Copy",
         res_citation_code: "Renal Companion Research Initiative. (2026). Real-World Nutritional Adherence in CKD Patients [Data set]. Renal Companion. https://renalcompanion.app/research",
 
+        // Download Modal
+        modal_title: "Coming Soon!",
+        modal_message: "The app hasn't been officially released yet. The beta version will be available soon. Stay tuned and follow us on LinkedIn to stay updated!",
+        modal_follow_btn: "Follow on LinkedIn",
+
         // Methodology Page
         meth_page_title: "Renal Companion | Scientific Methodology",
         meth_hero_title: "Informatics Methodology &",
@@ -887,6 +892,11 @@ const translations = {
         res_cite_format_label: "صيغة الاقتباس القياسية (APA):",
         res_cite_note: "جميع مجموعات البيانات مرخصة بموجب <strong>CC BY-NC 4.0</strong>. يُحظر تماماً الاستخدام للنمذجة التجارية أو إعادة البيع بدون ترخيص منفصل.",
         res_citation_code: "مبادرة أبحاث مرافق الكلى. (2026). الالتزام الغذائي الواقعي لدى مرضى الكلى المزمن [مجموعة بيانات]. مرافق الكلى. https://renalcompanion.app/research",
+
+        // Download Modal
+        modal_title: "قريباً!",
+        modal_message: "لم يتم نشر التطبيق رسمياً بعد. ستكون النسخة التجريبية متاحة قريباً. ابقَ على اطلاع وتابعنا على لينكد إن للحصول على آخر التحديثات!",
+        modal_follow_btn: "تابعنا على لينكد إن",
         res_btn_copy: "نسخ",
         res_export_title: "📊 بيانات علمية مفتوحة",
         res_export_desc: "بينما الكود مغلق المصدر، فإن مجموعات البيانات المجهولة لدينا متاحة للبحث الأكاديمي. احصل على سجلات تغذية واقعية.",
