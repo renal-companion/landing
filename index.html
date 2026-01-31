@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>Renal Companion | Clinical-Grade CKD Nutrition Management</title>
+    <meta name="description"
+        content="KDOQI-compliant nutrition tracker for Chronic Kidney Disease. AI-powered guidance, 2000+ foods, offline-first architecture. Designed for clinical research and patient care.">
+    <meta name="keywords"
+        content="CKD, chronic kidney disease, nutrition tracker, dialysis, KDOQI, renal diet, nephrology, kidney health, medical app">
+    <meta name="author" content="Renal Companion Team">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/yourusername/renal-companion-landing/">
+    <meta property="og:title" content="Renal Companion | Clinical CKD Nutrition Management">
+    <meta property="og:description"
+        content="KDOQI-compliant nutrition tracker powered by AI. Precision nutrient tracking for Chronic Kidney Disease patients.">
+    <meta property="og:image" content="./assets/images/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://github.com/yourusername/renal-companion-landing/">
+    <meta property="twitter:title" content="Renal Companion | Clinical CKD Nutrition Management">
+    <meta property="twitter:description" content="KDOQI-compliant nutrition tracker powered by AI.">
+    <meta property="twitter:image" content="./assets/images/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+    <link rel="stylesheet" href="./assets/css/animations.css">
+    <link rel="stylesheet" href="./assets/css/rtl.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <!-- Logo area -->
+            <a href="index.html" class="nav-brand" data-i18n-aria="nav_logo_alt">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="Renal Companion Logo" class="nav-logo-img">
+                </div>
+                <span class="brand-name" data-i18n="nav_brand_name">RenalCompanion</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+                <li><a href="methodology.html" data-i18n="nav_features">Methodology</a></li>
+                <li><a href="#technology" data-i18n="nav_technology">System Architecture</a></li>
+                <li><a href="#clinical" data-i18n="nav_clinical">Clinical Protocols</a></li>
+                <li><a href="researchers.html" data-i18n="nav_researchers">For Researchers</a></li>
+
+                <!-- Mobile Only Menu Items -->
+                <li class="mobile-only"><a href="#download" data-i18n="nav_download">Download</a></li>
+            </ul>
+
+            <!-- Right Actions (Desktop) -->
+            <div class="nav-actions desktop-only">
+                <a href="#" class="lang-btn" aria-label="Switch Language">العربية</a>
+                <a href="#download" class="nav-cta" data-i18n="nav_download">Download</a>
+            </div>
+
+            <!-- Mobile Controls -->
+            <div class="mobile-controls mobile-only">
+                <a href="#" class="lang-btn small" aria-label="Switch Language">العربية</a>
+                <button class="nav-toggle" id="navToggle" data-i18n-aria="nav_toggle_aria">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="gradient-orb gradient-orb-1"></div>
+            <div class="gradient-orb gradient-orb-2"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="trust-badges">
+                        <span class="badge" data-i18n="hero_badge_kdoqi">KDOQI Compliant</span>
+                        <span class="badge" data-i18n="hero_badge_offline">Offline-First</span>
+                        <span class="badge" data-i18n="hero_badge_ai">AI-Powered</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span data-i18n="hero_title_main">Clinical-Grade Nutrition Management for</span>
+                        <span class="highlight" data-i18n="hero_title_highlight">Chronic Kidney Disease</span>
+                    </h1>
+                    <p class="hero-subtitle" data-i18n="hero_subtitle">
+                        Powered by KDOQI Guidelines | Validated by Nephrology Standards | Trusted by Healthcare
+                        Professionals
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#download" class="btn btn-primary btn-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" data-i18n-aria="hero_download_icon_aria">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            <span data-i18n="hero_btn_download">Deploy for Android</span>
+                        </a>
+                        <a href="methodology.html" class="btn btn-secondary btn-lg" data-i18n="hero_btn_docs">
+                            Clinical Protocol & Methodology
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="2000">0</span>
+                            <span class="stat-label" data-i18n="hero_stat_foods">Informatics Food Index</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="11">0</span>
+                            <span class="stat-label" data-i18n="hero_stat_nutrients">Bio-markers Tracked</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-label" data-i18n="hero_stat_stages">CKD Cohort Stages</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-logo-container">
+                        <img src="./assets/images/logo.png" alt="Renal Companion Logo" class="hero-logo-visual"
+                            data-i18n-alt="hero_mockup_alt">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinical Challenge Section - ENHANCED -->
+    <section class="clinical-challenge-section section-padding" id="challenge">
+        <div class="container">
+            <div class="section-header centered">
+                <h2 class="section-title" data-i18n="problem_title">The Clinical Challenge</h2>
+                <p class="section-subtitle" data-i18n="problem_subtitle">Why global renal care is failing to scale</p>
+            </div>
+
+            <!-- Impact Statistics -->
+            <div class="impact-stats-grid reveal-on-scroll">
+                <div class="stat-card-enhanced">
+                    <div class="stat-glow"></div>
+                    <div class="stat-content">
+                        <div class="stat-value primary-text"><span class="counter" data-target="850">850</span><span
+                                data-i18n="hero_stat_1_suffix">M</span></div>
+                        <p class="stat-desc" data-i18n="stat_1_desc">Patients worldwide living with chronic kidney
+                            disease</p>
+                        <small class="stat-cite" data-i18n="stat_1_cite">ISN/Global Atlas</small>
+                    </div>
+                </div>
+                <div class="stat-card-enhanced">
+                    <div class="stat-glow"></div>
+                    <div class="stat-content">
+                        <div class="stat-value warning-text"><span class="counter" data-target="60">60</span><span
+                                data-i18n="hero_stat_2_suffix">%</span></div>
+                        <p class="stat-desc" data-i18n="stat_2_desc">Dialysis patients failing to maintain dietary
+                            compliance</p>
+                        <small class="stat-cite" data-i18n="stat_2_cite">NIH/PubMed</small>
+                    </div>
+                </div>
+                <div class="stat-card-enhanced">
+                    <div class="stat-glow"></div>
+                    <div class="stat-content">
+                        <div class="stat-value danger-text"><span class="counter" data-target="3.5">3.5</span><span
+                                data-i18n="hero_stat_3_suffix">x</span></div>
+                        <p class="stat-desc" data-i18n="stat_3_desc">Increased mortality risk from untreated
+                            hyperkalemia</p>
+                        <small class="stat-cite" data-i18n="stat_3_cite">AHA/Frontiers</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Clinical Gap -->
+            <div class="clinical-gap-container reveal-on-scroll">
+                <div class="gap-header centered">
+                    <h3 data-i18n="problem_heading">The Clinical Gap</h3>
+                </div>
+                <div class="gap-grid">
+                    <!-- Problem 1: Toxic Additives (High Severity) -->
+                    <div class="clinical-gap-card severity-high">
+                        <div class="gap-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                                </path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                        </div>
+                        <div class="gap-content">
+                            <h4 data-i18n="prob_1_title">Data Blind Spots</h4>
+                            <p data-i18n="prob_1_desc">Generic databases ignore renal-toxic additives</p>
+                            <div class="gap-impact">
+                                <span class="impact-badge" data-i18n="prob_1_impact">Analysis: Up to 1000mg hidden
+                                    phosphorus/day</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Problem 2: Static Protocols (Medium Severity) -->
+                    <div class="clinical-gap-card severity-medium">
+                        <div class="gap-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <div class="gap-content">
+                            <h4 data-i18n="prob_2_title">Static Protocols</h4>
+                            <p data-i18n="prob_2_desc">One-size-fits-all limits fail CKD progression</p>
+                            <div class="gap-impact">
+                                <span class="impact-badge" data-i18n="prob_2_impact">Analysis: 40% of patients exceed
+                                    safety limits</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Problem 3: Lab Disconnect (Medium Severity) -->
+                    <div class="clinical-gap-card severity-medium">
+                        <div class="gap-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <div class="gap-content">
+                            <h4 data-i18n="prob_3_title">Lab Disconnect</h4>
+                            <p data-i18n="prob_3_desc">No integration with real-time lab results</p>
+                            <div class="gap-impact">
+                                <span class="impact-badge" data-i18n="prob_3_impact">Analysis: Critical latencies in
+                                    dietary adjustment</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Problem 4: Zero Portability (Low Severity) -->
+                    <div class="clinical-gap-card severity-low">
+                        <div class="gap-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                                <path d="M10 9L8 9"></path>
+                            </svg>
+                        </div>
+                        <div class="gap-content">
+                            <h4 data-i18n="prob_4_title">Zero Portability</h4>
+                            <p data-i18n="prob_4_desc">Offline functionality is absent in clinics</p>
+                            <div class="gap-impact">
+                                <span class="impact-badge" data-i18n="prob_4_impact">Analysis: Care gaps in
+                                    resource-limited settings</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Overview -->
+    <section class="solution-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header centered">
+                <h2 class="section-title" data-i18n="solution_title">The Renal Companion Solution</h2>
+                <p class="section-subtitle" data-i18n="solution_subtitle">Precision nutrition management built on
+                    clinical standards</p>
+            </div>
+            <div class="solution-grid">
+                <div class="solution-card">
+                    <div class="card-icon primary-gradient">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="card-title" data-i18n="solution_card1_title">Personalized Limits</h3>
+                    <p class="card-description" data-i18n="solution_card1_desc">
+                        Dynamic calculation based on CKD stage, dialysis type, body weight, and latest lab results.
+                        Automatically adjusts as your condition changes.
+                    </p>
+                    <ul class="card-features">
+                        <li data-i18n="solution_card1_feat1">KDOQI guideline compliance</li>
+                        <li data-i18n="solution_card1_feat2">Adjusted Body Weight (AjBW) calculations</li>
+                        <li data-i18n="solution_card1_feat3">Lab result integration</li>
+                    </ul>
+                </div>
+                <div class="solution-card">
+                    <div class="card-icon success-gradient">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="card-title" data-i18n="solution_card2_title">Real-Time Tracking</h3>
+                    <p class="card-description" data-i18n="solution_card2_desc">
+                        Instant feedback on nutrient intake vs. clinical limits. Visual progress bars color-code your
+                        adherence with professional medical accuracy.
+                    </p>
+                    <ul class="card-features">
+                        <li data-i18n="solution_card2_feat1">11 tracked nutrients</li>
+                        <li data-i18n="solution_card2_feat2">2000+ food database</li>
+                        <li data-i18n="solution_card2_feat3">PRAL score calculation</li>
+                    </ul>
+                </div>
+                <div class="solution-card">
+                    <div class="card-icon ai-gradient">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="card-title" data-i18n="solution_card3_title">AI Assistant "Murshid"</h3>
+                    <p class="card-description" data-i18n="solution_card3_desc">
+                        Context-aware dietary guidance powered by Google Gemini. Knows your CKD stage, recent intake,
+                        and provides personalized advice.
+                    </p>
+                    <ul class="card-features">
+                        <li data-i18n="solution_card3_feat1">Gemini-1.5-Flash powered</li>
+                        <li data-i18n="solution_card3_feat2">Clinical context injection</li>
+                        <li data-i18n="solution_card3_feat3">Evidence-based recommendations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features Deep Dive -->
+    <section class="features-section section-padding" id="features">
+        <div class="container">
+            <div class="section-header centered">
+                <h2 class="section-title" data-i18n="features_title">Comprehensive Feature Ecosystem</h2>
+                <p class="section-subtitle" data-i18n="features_subtitle">Every feature engineered for clinical
+                    precision and patient safety</p>
+            </div>
+
+            <!-- Interactive Feature Tabs -->
+            <!-- Sequential Feature Discovery -->
+            <div class="feature-sequential">
+                <!-- Feature 1: Murshid AI -->
+                <div class="feature-showcase reveal-on-scroll" id="murshid-ai">
+                    <div class="feature-detail">
+                        <div class="feature-label" data-i18n="features_tab1">Murshid AI Assistant</div>
+                        <h3 data-i18n="feat_ai_title">Murshid: Your 24/7 Clinical Guide</h3>
+                        <p class="lead-text" data-i18n="feat_ai_desc">A domain-specific AI assistant that doesn't just
+                            chat—it reasons using your live clinical data.</p>
+                        <ul class="feature-highlights">
+                            <li data-i18n="feat_ai_h1"><strong>Medical Guardrails:</strong> Programmed with KDOQI safety
+                                boundaries</li>
+                            <li data-i18n="feat_ai_h2"><strong>Bilingual Fluency:</strong> Deep medical Arabic and
+                                English support</li>
+                            <li data-i18n="feat_ai_h3"><strong>Context Injection:</strong> Knows your labs, CKD stage,
+                                and dialysate</li>
+                            <li data-i18n="feat_ai_h4"><strong>Educational Support:</strong> Explains complex renal
+                                guidelines simply</li>
+                        </ul>
+                        <div class="tech-badge-row">
+                            <span class="tech-badge" data-i18n="tech_gemini_title">Google Gemini 1.5</span>
+                            <span class="tech-badge" data-i18n="demo_ai_badge">Contextual Guidance</span>
+                        </div>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="chat-demo-container">
+                            <div class="chat-header">
+                                <div class="chat-header-avatar">
+                                    <div class="avatar-ring"></div>
+                                    <div class="ai-sparkle-group">
+                                        <svg class="sparkle s1" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12,2L14.5,9L22,11.5L14.5,14L12,21L9.5,14L2,11.5L9.5,9L12,2Z">
+                                            </path>
+                                        </svg>
+                                        <svg class="sparkle s2" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12,2L14.5,9L22,11.5L14.5,14L12,21L9.5,14L2,11.5L9.5,9L12,2Z">
+                                            </path>
+                                        </svg>
+                                        <svg class="sparkle s3" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12,2L14.5,9L22,11.5L14.5,14L12,21L9.5,14L2,11.5L9.5,9L12,2Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="chat-header-info">
+                                    <h4 class="chat-name" data-i18n="demo_ai_name">Murshid AI</h4>
+                                    <span class="chat-status" data-i18n="demo_ai_status">Online · Ready to help</span>
+                                </div>
+                            </div>
+
+                            <div class="chat-messages">
+                                <div class="chat-message user">
+                                    <div class="message-content">
+                                        <p data-i18n="demo_ai_user_q">Can I eat a medium banana today?</p>
+                                    </div>
+                                    <span class="message-time">2:34 PM</span>
+                                </div>
+
+                                <!-- Reasoning UI (Premium) -->
+                                <div class="typing-indicator hidden" style="display: none;">
+                                    <div class="ai-avatar-small">
+                                        <div class="ai-sparkle-group mini">
+                                            <svg class="sparkle s1" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12,2L14.5,9L22,11.5L14.5,14L12,21L9.5,14L2,11.5L9.5,9L12,2Z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="reasoning-box-premium">
+                                        <div class="reasoning-aura"></div>
+                                        <div class="reasoning-content-inner">
+                                            <div class="reasoning-status-text" data-i18n="demo_ai_step_analyze">
+                                                Analyzing inferential request...</div>
+                                            <div class="reasoning-progress-track">
+                                                <div class="progress-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="chat-message assistant hidden" style="display: none;">
+                                    <div class="ai-avatar">
+                                        <div class="ai-sparkle-group mini">
+                                            <svg class="sparkle s1" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12,2L14.5,9L22,11.5L14.5,14L12,21L9.5,14L2,11.5L9.5,9L12,2Z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="message-content">
+                                        <p data-i18n="demo_ai_murshid_a">Based on your <strong>CKD Stage 4</strong> and
+                                            today's
+                                            intake of 1200mg Potassium, a medium banana (422mg) would put you at 81% of
+                                            your
+                                            daily limit. <strong>Safe to enjoy!</strong></p>
+                                        <div class="message-badges">
+                                            <span class="badge-clinical" data-i18n="demo_ai_badge">Contextual
+                                                Guidance</span>
+                                        </div>
+                                    </div>
+                                    <span class="message-time">2:34 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Nutrition -->
+                <div class="feature-showcase alt-layout reveal-on-scroll" id="nutrition">
+                    <div class="feature-detail">
+                        <div class="feature-label" data-i18n="features_tab2">Precision Budgeting</div>
+                        <h3 data-i18n="feat_nut_title">Precision Nutritional Budgeting</h3>
+                        <p class="lead-text" data-i18n="feat_nut_desc">Move beyond simple logging. Manage your daily
+                            allowance of Potassium, Sodium, and Phosphorus with sub-second precision.</p>
+                        <ul class="feature-highlights">
+                            <li data-i18n="feat_nut_h1"><strong>Real-Time Budgeting:</strong> Visual counters for all 11
+                                critical nutrients</li>
+                            <li data-i18n="feat_nut_h2"><strong>Arabic-First Search:</strong> Instant fuzzy matching for
+                                Middle Eastern diets</li>
+                            <li data-i18n="feat_nut_h3"><strong>Automatic Conversion:</strong> Cups, grams, and pieces
+                                handled instantly</li>
+                            <li data-i18n="feat_nut_h4"><strong>PRAL Scoring:</strong> Visual acid load triggers to
+                                prevent acidosis</li>
+                        </ul>
+                        <div class="tech-badge-row">
+                            <span class="tech-badge" data-i18n="tech_isar_title">Isar DB</span>
+                            <span class="tech-badge" data-i18n="feat_nut_badge_index">Sub-Second Indexing</span>
+                        </div>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="animated-mockup">
+                            <div class="mockup-header-demo">
+                                <span data-i18n="demo_nut_budget">Daily Potassium Budget</span>
+                                <div class="budget-progress-demo">
+                                    <div class="progress-fill-demo" style="width: 65%;"></div>
+                                </div>
+                            </div>
+                            <div class="mockup-screen">
+                                <div class="search-demo">
+                                    <div class="search-bar pulsing" data-i18n="demo_nut_search_placeholder">🔍 Search
+                                        2000+ foods...</div>
+                                    <div class="food-results">
+                                        <div class="food-item slide-in delay-1">
+                                            <span data-i18n="demo_nut_food1">🍗 Chicken Breast (Grilled)</span>
+                                            <span class="nutrient-badge" data-i18n="demo_nut_badge_low">Low K</span>
+                                        </div>
+                                        <div class="food-item slide-in delay-2">
+                                            <span data-i18n="demo_nut_food2">🥬 Spinach (Cooked)</span>
+                                            <span class="nutrient-badge warning" data-i18n="demo_nut_badge_high">High
+                                                K</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Clinical Intelligence -->
+                <div class="feature-showcase reveal-on-scroll" id="clinical">
+                    <div class="feature-detail">
+                        <div class="feature-label" data-i18n="features_tab3">Safety Watchdog</div>
+                        <h3 data-i18n="feat_clin_title">Elite Clinical Safety Watchdog</h3>
+                        <p class="lead-text" data-i18n="feat_clin_desc">An autonomous inference engine that monitors
+                            every entry against established renal protocols.</p>
+                        <div class="clinical-formula">
+                            <h4 data-i18n="feat_clin_ex_title">Rule Logic: Potassium Safety Protocol</h4>
+                            <div class="formula-box">
+                                <code>IF (Serum K > 5.5 mmol/L) THEN Limit = 2000mg</code>
+                                <code>ELSE IF (CKD Stage >= 4) THEN Limit = 2500mg</code>
+                                <code>ELSE Limit = CalculateByWeight(IBW, Dialysis)</code>
+                            </div>
+                            <p class="formula-explanation" data-i18n="feat_clin_ex_expl">The system triggers proactive
+                                overrides when lab results deviate from baseline safe zones.</p>
+                        </div>
+                        <ul class="feature-highlights">
+                            <li data-i18n="feat_clin_h1"><strong>Dynamic Logic:</strong> Rules adapt to your CKD-EPI
+                                stage changes</li>
+                            <li data-i18n="feat_clin_h2"><strong>Lab Integration:</strong> Alerts trigger when diet
+                                conflicts with recent labs</li>
+                            <li data-i18n="feat_clin_h3"><strong>Medical Precision:</strong> Corrected Calcium and AjBW
+                                formulas included</li>
+                        </ul>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="inference-diagram">
+                            <div class="inference-node" data-i18n="demo_clin_user_profile">User Profile<br>(CKD 4, HD)
+                            </div>
+                            <div class="inference-arrow">→</div>
+                            <div class="inference-node" data-i18n="demo_clin_labs">Lab Results<br>(K: 5.8)</div>
+                            <div class="inference-arrow">→</div>
+                            <div class="inference-node inference-node-highlight" data-i18n="demo_clin_engine">Rule
+                                Engine</div>
+                            <div class="inference-arrow">→</div>
+                            <div class="inference-node inference-node-result" data-i18n="demo_clin_result">K Limit:
+                                2000mg</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 4: Visual Recognition -->
+                <div class="feature-showcase alt-layout reveal-on-scroll" id="visual-recognition">
+                    <div class="feature-detail">
+                        <div class="feature-label" data-i18n="features_tab4">Visual Food Intelligence</div>
+                        <h3 data-i18n="feat_vis_title">Visual Food Intelligence</h3>
+                        <p class="lead-text" data-i18n="feat_vis_desc">Recognize fruits, vegetables, and complex dishes
+                            instantly. Just point your camera and let Murshid do the math.</p>
+                        <ul class="feature-highlights">
+                            <li data-i18n="feat_vis_h1"><strong>Real-Time Recognition:</strong> Powered by Google
+                                Gemini-Vision</li>
+                            <li data-i18n="feat_vis_h2"><strong>Precision Portions:</strong> Identify items and adjust
+                                weights instantly</li>
+                            <li data-i18n="feat_vis_h3"><strong>Instant Logging:</strong> Add recognized items directly
+                                to your budget</li>
+                            <li data-i18n="feat_vis_h4"><strong>Cultural Awareness:</strong> Optimized for Middle
+                                Eastern food items</li>
+                        </ul>
+                        <div class="tech-badge-row">
+                            <span class="tech-badge">Gemini Vision AI</span>
+                            <span class="tech-badge" data-i18n="hero_badge_offline">Offline-First</span>
+                        </div>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="visual-recognition-demo">
+                            <div class="camera-ui">
+                                <div class="camera-status" data-i18n="demo_vis_status_ready">Tap to Scan</div>
+                                <div class="camera-frame">
+                                    <div class="scan-indicator">
+                                        <div class="crosshair"></div>
+                                    </div>
+                                    <div class="object-detection-box">
+                                        <div class="detection-label">
+                                            <span data-i18n="demo_vis_detect">🍌 Banana Detected</span>
+                                            <span class="weight-tag" data-i18n="demo_vis_weight">120g (Medium)</span>
+                                        </div>
+                                    </div>
+                                    <div class="camera-shutter"></div>
+                                </div>
+                                <div class="quantity-selector">
+                                    <div class="quantity-label" data-i18n="demo_vis_quantity_label">Weight</div>
+                                    <div class="quantity-slider">
+                                        <div class="quantity-slider-fill"></div>
+                                    </div>
+                                    <div class="quantity-value" data-i18n="demo_vis_weight">120g (Medium)</div>
+                                </div>
+                                <div class="action-overlay">
+                                    <button class="add-btn" data-i18n="demo_vis_add">Tap to Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 5: AI Vision -->
+                <div class="feature-showcase alt-layout reveal-on-scroll" id="scanner">
+                    <div class="feature-detail">
+                        <div class="feature-label" data-i18n="features_tab5">AI Vision Scanner</div>
+                        <h3 data-i18n="feat_scan_title">Computer Vision Label Scanner</h3>
+                        <p class="lead-text" data-i18n="feat_scan_desc">Gemini-powered OCR that detects hidden
+                            phosphorus additives—the silent killers in CKD.</p>
+                        <ul class="feature-highlights">
+                            <li data-i18n="feat_scan_h1"><strong>Additive Detection:</strong> Flags Sodium Phosphate,
+                                Dipotassium Phosphate</li>
+                            <li data-i18n="feat_scan_h2"><strong>Bilingual OCR:</strong> Reads Arabic and English
+                                nutrition labels</li>
+                            <li data-i18n="feat_scan_h3"><strong>Structured Parsing:</strong> Converts images to
+                                FoodItem entities</li>
+                            <li data-i18n="feat_scan_h4"><strong>Instant Warning:</strong> Red alert if phosphorus
+                                additives detected</li>
+                        </ul>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="scanner-demo">
+                            <div class="scan-frame">
+                                <div class="scan-line"></div>
+                                <div class="scan-result" data-i18n="demo_scan_warning">
+                                    ⚠️ Warning: Contains<br><strong>Sodium Phosphate</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 6: Lab Analytics -->
+                <div class="feature-showcase reveal-on-scroll" id="analytics">
+                    <div class="feature-detail">
+                        <div class="feature-label" data-i18n="features_tab6">Lab Analytics</div>
+                        <h3 data-i18n="feat_ana_title">Longitudinal Lab Analytics</h3>
+                        <p class="lead-text" data-i18n="feat_ana_desc">Track lab trends over time to visualize your
+                            kidney health trajectory.</p>
+                        <ul class="feature-highlights">
+                            <li data-i18n="feat_ana_h1"><strong>Interactive Charts:</strong> Zoom, pan, and analyze
+                                multi-month trends</li>
+                            <li data-i18n="feat_ana_h2"><strong>Correlation Insights:</strong> See how diet affects
+                                Potassium/Phosphorus levels</li>
+                            <li data-i18n="feat_ana_h3"><strong>Export for Clinicians:</strong> PDF reports for doctor
+                                visits</li>
+                            <li data-i18n="feat_ana_h4"><strong>Predictive Alerts:</strong> Warnings when approaching
+                                dangerous zones</li>
+                        </ul>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="chart-preview">
+                            <svg viewBox="0 0 300 200" class="trend-chart">
+                                <polyline points="10,150 50,140 90,135 130,130 170,125 210,115 250,110 290,105"
+                                    fill="none" stroke="#10A5A5" stroke-width="3" />
+                                <circle cx="290" cy="105" r="5" fill="#10A5A5" />
+                                <line x1="0" y1="120" x2="300" y2="120" stroke="#EF4444" stroke-width="1"
+                                    stroke-dasharray="5,5" />
+                                <text x="5" y="115" fill="#EF4444" font-size="10"
+                                    data-i18n="demo_ana_danger_zone">Danger Zone</text>
+                            </svg>
+                            <p class="chart-label" data-i18n="feat_ana_chart">Serum Potassium Trend (6 months)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="technology-section section-padding bg-light" id="technology">
+        <div class="container">
+            <div class="section-header centered">
+                <h2 class="section-title" data-i18n="tech_title">Built on Modern, Battle-Tested Technology</h2>
+                <p class="section-subtitle" data-i18n="tech_subtitle">Enterprise-grade architecture meets clinical rigor
+                </p>
+            </div>
+
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 48 48" width="48" height="48">
+                            <path fill="#42A5F5" d="M42 8L24 4 6 8v12c0 11 8 21 18 24 10-3 18-13 18-24V8z" />
+                        </svg>
+                    </div>
+                    <h3 data-i18n="tech_clean_title">Clean Architecture</h3>
+                    <p data-i18n="tech_clean_desc">Strict separation of concerns: Presentation → Domain → Data.
+                        Testable, maintainable, scalable.
+                    </p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 48 48" width="48" height="48">
+                            <rect fill="#0D7373" width="48" height="48" rx="8" /><text x="24" y="32"
+                                text-anchor="middle" fill="white" font-size="20" font-weight="bold">DB</text>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="tech_isar_title">Isar NoSQL</h3>
+                    <p data-i18n="tech_isar_desc">Lightning-fast local database. 10x faster than SQLite. Sync-ready for
+                        future cloud integration.
+                    </p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 48 48" width="48" height="48">
+                            <circle fill="#7C3AED" cx="24" cy="24" r="20" />
+                            <path fill="white" d="M24 14v20m-7-7l7 7 7-7" />
+                        </svg>
+                    </div>
+                    <h3 data-i18n="tech_bloc_title">BLoC State Management</h3>
+                    <p data-i18n="tech_bloc_desc">Reactive streams with flutter_bloc. Predictable state, zero race
+                        conditions.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 48 48" width="48" height="48">
+                            <path fill="#4285F4" d="M24 4L8 14v10c0 10 7 19 16 21 9-2 16-11 16-21V14L24 4z" />
+                        </svg>
+                    </div>
+                    <h3 data-i18n="tech_gemini_title">Google Gemini 3 Pro</h3>
+                    <p data-i18n="tech_gemini_desc">State-of-the-art AI for chat and vision. Context-aware, medically
+                        informed responses.</p>
+                </div>
+            </div>
+
+            <!-- Architecture Diagram -->
+            <div class="architecture-diagram">
+                <h3 class="diagram-title" data-i18n="arch_title">System Architecture</h3>
+                <div class="arch-layers">
+                    <div class="arch-layer presentation">
+                        <h4 data-i18n="arch_pres_title">Presentation Layer</h4>
+                        <p data-i18n="arch_pres_desc">Flutter UI · BLoC State · Responsive Widgets</p>
+                    </div>
+                    <div class="arch-arrow">↓</div>
+                    <div class="arch-layer domain">
+                        <h4 data-i18n="arch_dom_title">Domain Layer</h4>
+                        <p data-i18n="arch_dom_desc">Use Cases · Entities · Business Rules</p>
+                    </div>
+                    <div class="arch-arrow">↓</div>
+                    <div class="arch-layer data">
+                        <h4 data-i18n="arch_data_title">Data Layer</h4>
+                        <p data-i18n="arch_data_desc">Repositories · Isar DB · Gemini API</p>
+                    </div>
+                </div>
+                <p class="arch-note" data-i18n="arch_note">
+                    <strong>Dependency Rule:</strong> Inner layers never depend on outer layers.
+                    Domain logic remains pure and framework-independent.
+                </p>
+            </div>
+
+            <!-- Code Snippet Showcase -->
+            <div class="code-showcase">
+                <h3 data-i18n="code_title">Clinical Formula in Action</h3>
+                <pre><code class="language-dart">// CKD-EPI 2021 - Race-Free eGFR Calculation
+static double calculateEGFR({
+  required double creatinine,
+  required int age,
+  required bool isMale,
+}) {
+  final kappa = isMale ? 0.9 : 0.7;
+  final alpha = isMale ? -0.302 : -0.241;
+  final ratio = creatinine / kappa;
+  final minRatio = ratio < 1 ? ratio : 1;
+  final maxRatio = ratio > 1 ? ratio : 1;
+  
+  return 142 * 
+         pow(minRatio, alpha) * 
+         pow(maxRatio, -1.200) * 
+         pow(0.9938, age) * 
+         (isMale ? 1 : 1.012);
+}</code></pre>
+                <p class="code-caption">Validated against KDOQI 2024 guidelines. Precision: ±2 mL/min/1.73m²</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinical Informatics Deep-Dive -->
+    <section class="informatics-section section-padding bg-dark text-white" id="informatics">
+        <div class="container">
+            <div class="section-header centered">
+                <h2 class="section-title text-white" data-i18n="engine_title">Clinical Inference Logic</h2>
+                <p class="section-subtitle text-silver" data-i18n="engine_subtitle">Deterministic priority-based
+                    nutritional orchestration</p>
+                <p class="lead-text text-silver centered" style="max-width: 800px; margin: 32px auto 0;"
+                    data-i18n="engine_desc">
+                    The Renal Companion CDSS utilizes a multi-layered deterministic inference engine to resolve complex
+                    nutritional constraints in real-time, ensuring absolute patient safety and guideline adherence.
+                </p>
+            </div>
+
+            <div class="engine-grid">
+                <div class="engine-step-card reveal-on-scroll">
+                    <div class="step-badge">01</div>
+                    <h3 data-i18n="engine_step1_title">Baseline Calibration</h3>
+                    <p data-i18n="engine_step1_desc">Calculation of IBW (Hamwi) and CKD-EPI (2021) eGFR to establish the
+                        patient's biological ceiling.</p>
+                </div>
+                <div class="engine-step-card reveal-on-scroll">
+                    <div class="step-badge">02</div>
+                    <h3 data-i18n="engine_step2_title">Priority Resolution</h3>
+                    <p data-i18n="engine_step2_desc">Clinical rules are cross-referenced against comorbidities. Higher
+                        priority protocols dynamically override chronic baselines.</p>
+                </div>
+                <div class="engine-step-card reveal-on-scroll">
+                    <div class="step-badge">03</div>
+                    <h3 data-i18n="engine_step3_title">Lab Feedback Loop</h3>
+                    <p data-i18n="engine_step3_desc">Real-time calibration based on biomarkers. Serum K > 5.5 or Na >
+                        145 triggers immediate proactive safety caps.</p>
+                </div>
+            </div>
+
+            <!-- Advanced Analytics Highlight -->
+            <div class="analytics-highlight section-padding-t">
+                <div class="analytics-content">
+                    <h3 class="gradient-text-alt" data-i18n="analytics_title">Predictive Biomarker Mapping</h3>
+                    <p class="analytics-sub" data-i18n="analytics_subtitle">Academic-grade trend analysis and metabolic
+                        modeling</p>
+                    <p class="lead-text text-silver" data-i18n="analytics_desc">Leveraging sophisticated mathematical
+                        models to monitor disease progression and metabolic load.</p>
+                    <div class="analytics-features">
+                        <div class="ana-feat">
+                            <h4 data-i18n="analytics_feature1_title">Linear Regression Trends</h4>
+                            <p data-i18n="analytics_feature1_desc">90-day trajectory mapping of GFR and Creatinine to
+                                detect 'Rapid Decline'.</p>
+                        </div>
+                        <div class="ana-feat">
+                            <h4 data-i18n="analytics_feature2_title">Metabolic Acidosis Modeling</h4>
+                            <p data-i18n="analytics_feature2_desc">Dynamic calculation of PRAL (Potential Renal Acid
+                                Load) scores to prevent diet-induced complications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="analytics-visual">
+                    <div class="math-backdrop">
+                        <code>slope = (n∑XY - ∑X∑Y) / (n∑X² - (∑X)²)</code>
+                        <div class="regression-line-demo"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Clinical Validation -->
+    <section class="clinical-section section-padding" id="clinical">
+        <div class="container">
+            <div class="section-header centered">
+                <h2 class="section-title" data-i18n="val_title">Clinically Validated, Research-Grade</h2>
+                <p class="section-subtitle" data-i18n="val_subtitle">Built on evidence-based guidelines, suitable for
+                    IRB submission</p>
+            </div>
+
+            <div class="validation-grid">
+                <div class="validation-card">
+                    <div class="validation-badge">✓ KDOQI</div>
+                    <h3 data-i18n="val_kdoqi_title">KDOQI 2020 Guidelines</h3>
+                    <p data-i18n="val_kdoqi_desc">All nutrient limits and calculations strictly adhere to Kidney Disease
+                        Outcomes Quality
+                        Initiative standards.</p>
+                </div>
+                <div class="validation-card">
+                    <div class="validation-badge">✓ Formulas</div>
+                    <h3 data-i18n="val_algo_title">Medical Algorithms</h3>
+                    <ul class="validation-list">
+                        <li data-i18n="val_algo_list1">CKD-EPI (2021) - Non-race specific eGFR</li>
+                        <li data-i18n="val_algo_list2">Adjusted Body Weight (AjBW) - Hamwi modification</li>
+                        <li data-i18n="val_algo_list3">Corrected Calcium - Serum Albumin calibration</li>
+                        <li data-i18n="val_algo_list4">PRAL - Net Acid Load potential quantification</li>
+                    </ul>
+                </div>
+                <div class="validation-card">
+                    <div class="validation-badge">✓ Privacy</div>
+                    <h3 data-i18n="val_privacy_title">Data Protection</h3>
+                    <p data-i18n="val_privacy_desc">Offline-first architecture. No PHI transmitted. All data encrypted
+                        at rest. GDPR/HIPAA ready.</p>
+                </div>
+            </div>
+
+            <div class="research-callout">
+                <h3 data-i18n="val_research_title">🎓 Designed for Clinical Research</h3>
+                <p data-i18n="val_research_desc">Renal Companion's architecture and validation make it suitable for
+                    inclusion in peer-reviewed
+                    studies. Export data as CSV for statistical analysis, cite using our DOI, and leverage our open
+                    architecture for reproducibility.</p>
+                <a href="#researchers" class="btn btn-primary" data-i18n="val_research_btn">Learn More for
+                    Researchers</a>
+            </div>
+
+            <!-- Compliance Table -->
+            <div class="compliance-matrix-container section-padding-t">
+                <h3 class="centered section-subtitle" data-i18n="matrix_title">Global Guidelines Compliance Registry
+                </h3>
+                <div class="table-wrapper reveal-on-scroll">
+                    <table class="compliance-table">
+                        <thead>
+                            <tr>
+                                <th data-i18n="matrix_header_standard">Global Standard</th>
+                                <th data-i18n="matrix_header_implementation">Renal Companion Logic</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-i18n="matrix_row1_std">KDOQI 2024: Potassium Restriction</td>
+                                <td data-i18n="matrix_row1_impl">Context-aware caps based on GFR and Serum K levels.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="matrix_row2_std">CKD-EPI 2021: Non-Race GFR</td>
+                                <td data-i18n="matrix_row2_impl">Deterministic implementation of race-neutral
+                                    coefficients.</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="matrix_row3_std">Hamwi/AjBW: Protein Dosing</td>
+                                <td data-i18n="matrix_row3_impl">0.25 correction factor for Obesity/Malnutrition
+                                    calibration.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Researchers -->
+    <section class="researchers-section section-padding bg-light" id="researchers">
+        <div class="container">
+            <div class="section-header centered">
+                <h2 class="section-title" data-i18n="nav_researchers">For Researchers & Clinical Teams</h2>
+                <p class="section-subtitle" data-i18n="res_cite_subtitle">Closed Code. Open Data.</p>
+            </div>
+
+            <div class="researcher-content">
+                <div class="citation-box" style="text-align: center; padding: 40px;">
+                    <h3 data-i18n="res_cite_title">Research Initiative</h3>
+                    <div class="citation-text" style="font-style: normal; text-align: center; margin-bottom: 24px;">
+                        <p data-i18n="res_cite_text">Renal Companion protects its proprietary algorithms but liberates
+                            the data. We invite researchers to leverage our 'Verified Datasets' to advance nephrology
+                            care.</p>
+                    </div>
+                    <a href="researchers.html" class="btn btn-secondary" style="margin-top: 16px;">
+                        <span data-i18n="res_btn_portal">Open Research Portal</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" style="margin-left: 8px;">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                            <polyline points="15 3 21 3 21 9" />
+                            <line x1="10" y1="14" x2="21" y2="3" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="research-features">
+                    <div class="research-item">
+                        <h4 data-i18n="res_export_title">📊 Open Science Data</h4>
+                        <p data-i18n="res_export_desc">While the code is proprietary, our anonymized datasets are
+                            available for academic research. Access real-world nutritional logs.</p>
+                    </div>
+                    <div class="research-item">
+                        <h4 data-i18n="res_docs_title">📖 Open Data Protocol</h4>
+                        <p data-i18n="res_docs_desc">We follow a strict 3-tier data access model. Public reports are
+                            free, and raw datasets are available upon institutional request.</p>
+                    </div>
+                    <div class="research-item">
+                        <h4 data-i18n="res_irb_title">🔬 IRB-Ready</h4>
+                        <p data-i18n="res_irb_desc">Privacy-first design with no cloud sync. Suitable for hospital
+                            environments and ethics board approval.</p>
+                    </div>
+                    <div class="research-item">
+                        <h4 data-i18n="res_collab_title">🤝 Academic Collaboration</h4>
+                        <p data-i18n="res_collab_desc">Partner with our team for custom data collection protocols and
+                            joint publications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download-section section-padding" id="download">
+        <div class="container">
+            <div class="section-header centered">
+                <h2 class="section-title" data-i18n="download_title">Clinical Deployment</h2>
+                <p class="section-subtitle" data-i18n="download_subtitle">Research-Grade | Offline-First |
+                    Privacy-Centric Architecture</p>
+            </div>
+
+            <div class="download-container">
+                <div class="download-card">
+                    <div class="download-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="download_heading">Download APK</h3>
+                    <p class="download-info">
+                        <strong><span data-i18n="download_version">Version:</span></strong> 1.0.0<br>
+                        <strong><span data-i18n="download_size">Size:</span></strong> ~25 MB<br>
+                        <strong><span data-i18n="download_requirements">Requirements:</span></strong> Android 7.0+
+                    </p>
+                    <a href="https://github.com/yourusername/renal_companion/releases/latest/download/app-release.apk"
+                        class="btn btn-primary btn-lg download-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span data-i18n="download_btn">Download for Android</span>
+                    </a>
+                    <details class="install-guide">
+                        <summary data-i18n="download_guide_title">Installation Guide</summary>
+                        <ol>
+                            <li data-i18n="download_guide_1">Download the APK file</li>
+                            <li data-i18n="download_guide_2">Enable "Install from Unknown Sources" in Settings</li>
+                            <li data-i18n="download_guide_3">Open the APK file and tap "Install"</li>
+                            <li data-i18n="download_guide_4">Launch Renal Companion and complete onboarding</li>
+                        </ol>
+                    </details>
+                </div>
+
+                <div class="qr-section">
+                    <h4 data-i18n="download_qr_title">Scan to Download</h4>
+                    <div class="qr-placeholder">
+                        <svg viewBox="0 0 100 100" width="150" height="150">
+                            <rect fill="white" width="100" height="100" />
+                            <rect fill="black" x="10" y="10" width="10" height="10" />
+                            <rect fill="black" x="30" y="10" width="10" height="10" />
+                            <rect fill="black" x="50" y="10" width="10" height="10" />
+                            <rect fill="black" x="70" y="10" width="10" height="10" />
+                            <rect fill="black" x="10" y="30" width="10" height="10" />
+                            <rect fill="black" x="50" y="30" width="10" height="10" />
+                            <rect fill="black" x="70" y="30" width="10" height="10" />
+                            <rect fill="black" x="10" y="50" width="10" height="10" />
+                            <rect fill="black" x="30" y="50" width="10" height="10" />
+                            <rect fill="black" x="70" y="50" width="10" height="10" />
+                            <rect fill="black" x="10" y="70" width="10" height="10" />
+                            <rect fill="black" x="30" y="70" width="10" height="10" />
+                            <rect fill="black" x="50" y="70" width="10" height="10" />
+                            <rect fill="black" x="70" y="70" width="10" height="10" />
+                        </svg>
+                    </div>
+                    <p class="qr-caption" data-i18n="download_qr_caption">QR Code for mobile download</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 data-i18n="footer_about_title">About Renal Companion</h4>
+                    <p data-i18n="footer_about_text">A clinical-grade nutrition management platform for Chronic Kidney
+                        Disease patients, built on
+                        KDOQI guidelines and powered by modern AI.</p>
+                    <div class="footer-disclaimer">
+                        <strong data-i18n="footer_disclaimer">Medical Disclaimer:</strong> <span
+                            data-i18n="footer_disclaimer_text">This app is for informational purposes only and does not
+                            replace professional medical advice.</span>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_resources">Resources</h4>
+                    <ul>
+                        <li><a href="#clinical" data-i18n="footer_resources_docs">Clinical Documentation</a></li>
+                        <li><a href="#download" data-i18n="footer_resources_download">Download APK</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_researchers">For Researchers</h4>
+                    <ul>
+                        <li><a href="#researchers" data-i18n="footer_researchers_citation">Citation Guide</a></li>
+                        <li><a href="#technology" data-i18n="footer_researchers_arch">Technical Architecture</a></li>
+                        <li><a href="mailto:research@renalcompanion.app" data-i18n="footer_researchers_contact">Research
+                                Inquiries</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_legal">Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html" data-i18n="footer_legal_privacy">Privacy Policy</a></li>
+                        <li><a href="#terms" data-i18n="footer_legal_terms">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright">&copy; 2026 Renal Companion. Designed for clinical excellence.</p>
+                <p data-i18n="footer_tagline">Built with precision for CKD patient care.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./assets/js/utils.js"></script>
+    <script src="./assets/js/i18n.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/animations.js"></script>
+</body>
+
+</html>

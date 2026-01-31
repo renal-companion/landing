@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Renal Companion</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Cairo:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+    <style>
+        .policy-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 120px 20px 80px;
+        }
+
+        .section-header {
+            margin-bottom: 60px;
+        }
+
+        .policy-last-updated {
+            text-align: center;
+            color: var(--neutral-500);
+            font-size: 0.9rem;
+            margin-bottom: 40px;
+            display: block;
+        }
+
+        .policy-section {
+            margin-bottom: 32px;
+            background: white;
+            padding: 40px;
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--neutral-200);
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            gap: 24px;
+            align-items: start;
+        }
+
+        .policy-icon-wrapper {
+            width: 48px;
+            height: 48px;
+            min-width: 48px;
+            background: var(--primary-50);
+            color: var(--primary-600);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .policy-section h2 {
+            color: var(--neutral-900);
+            margin-bottom: 16px;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .policy-section p {
+            color: var(--neutral-600);
+            line-height: 1.7;
+            margin-bottom: 16px;
+            font-size: 1rem;
+        }
+
+        .highlight-text {
+            color: var(--neutral-800) !important;
+            background: #F3F4F6;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border-left: 4px solid var(--neutral-400);
+        }
+
+        .policy-list {
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 24px;
+        }
+
+        .policy-list li {
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <!-- Logo area -->
+            <a href="index.html" class="nav-brand" data-i18n-aria="nav_logo_alt">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="Renal Companion Logo" class="nav-logo-img">
+                </div>
+                <span class="brand-name" data-i18n="nav_brand_name">RenalCompanion</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+                <li><a href="methodology.html" data-i18n="nav_features">Methodology</a></li>
+                <li><a href="index.html#technology" data-i18n="nav_technology">System Architecture</a></li>
+                <li><a href="index.html#clinical" data-i18n="nav_clinical">Clinical Protocols</a></li>
+                <li><a href="researchers.html" data-i18n="nav_researchers">For Researchers</a></li>
+
+                <!-- Mobile Only Menu Items -->
+                <li class="mobile-only"><a href="#download" data-i18n="nav_download">Download</a></li>
+            </ul>
+
+            <!-- Right Actions (Desktop) -->
+            <div class="nav-actions desktop-only">
+                <a href="#" class="lang-btn" aria-label="Switch Language">العربية</a>
+                <a href="#download" class="nav-cta" data-i18n="nav_download">Download</a>
+            </div>
+
+            <!-- Mobile Controls -->
+            <div class="mobile-controls mobile-only">
+                <a href="#" class="lang-btn small" aria-label="Switch Language">العربية</a>
+                <button class="nav-toggle" id="navToggle" data-i18n-aria="nav_toggle_aria">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="policy-content">
+        <header class="section-header centered">
+            <h1 class="section-title" data-i18n="privacy_title">Privacy Policy & Data Usage</h1>
+            <p class="section-subtitle" data-i18n="privacy_subtitle">Transparency and security at the core of your care.
+            </p>
+        </header>
+
+        <div class="policy-last-updated">
+            <span data-i18n="privacy_last_updated">Last Updated: January 2026</span>
+        </div>
+
+        <!-- 1. Core Philosophy -->
+        <div class="policy-section">
+            <div class="policy-icon-wrapper">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+            </div>
+            <div>
+                <h2 data-i18n="privacy_core_title">1. Offline-First & No PII Collection</h2>
+                <p data-i18n="privacy_core_text_1">Renal Companion operates on a strict <strong>Offline-First</strong>
+                    architecture. This means your data primarily resides on your local device.</p>
+                <p class="highlight-text" data-i18n="privacy_core_text_2">We <strong>NEVER</strong> collect, store, or
+                    transmit Personal Identifiable Information (PII) such as your name, phone number, email address, or
+                    precise location. Your identity remains completely anonymous to our servers.</p>
+            </div>
+        </div>
+
+        <!-- 2. Medical Data for Research -->
+        <div class="policy-section">
+            <div class="policy-icon-wrapper">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                </svg>
+            </div>
+            <div>
+                <h2 data-i18n="privacy_data_title">2. Collection of Anonymized Medical Data</h2>
+                <p data-i18n="privacy_data_text">To improve clinical outcomes and support nephrology research, we
+                    collect <strong>strictly anonymized</strong> medical usage data. By using this application, you
+                    consent to the collection of:</p>
+                <ul class="policy-list">
+                    <li data-i18n="privacy_data_list_1"><strong>Nutritional Logs:</strong> Types of food consumed,
+                        quantities, and nutrient breakdown (Potassium, Phosphorus, Sodium).</li>
+                    <li data-i18n="privacy_data_list_2"><strong>Lab Results:</strong> Values for eGFR, Creatinine,
+                        Albumin, and electrolytes to calibrate clinical algorithms.</li>
+                    <li data-i18n="privacy_data_list_3"><strong>App Usage Patterns:</strong> Feature interaction metrics
+                        to improve user experience.</li>
+                </ul>
+                <div class="alert-box">
+                    <strong data-i18n="privacy_data_consent_label">Research Consent:</strong>
+                    <span data-i18n="privacy_data_consent_text">By using Renal Companion, you explicitly grant the
+                        development team permission to use this anonymized, aggregated data for scientific research,
+                        academic publications, and statistical analysis aimed at improving CKD patient care.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Third Party Services -->
+        <div class="policy-section">
+            <div class="policy-icon-wrapper">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                    <line x1="9" y1="9" x2="9.01" y2="9" />
+                    <line x1="15" y1="9" x2="15.01" y2="9" />
+                </svg>
+            </div>
+            <div>
+                <h2 data-i18n="privacy_ai_title">3. AI & Third-Party Processing</h2>
+                <p data-i18n="privacy_ai_text">To provide advanced features like the "Murshid" Smart Assistant and
+                    Vision Scanner, specific data snippets are processed by third-party providers:</p>
+                <ul class="policy-list">
+                    <li data-i18n="privacy_ai_list_1"><strong>Google Gemini AI:</strong> When you use the chat assistant
+                        or label scanner, anonymized text queries and image data are sent to Google's generative AI
+                        servers for processing.</li>
+                </ul>
+                <p data-i18n="privacy_ai_disclaimer">We do not share your full medical history with these providers.
+                    Only the immediate context required to answer your question or scan a product is transmitted
+                    ephemerally.</p>
+            </div>
+        </div>
+
+        <!-- 4. Legal Disclaimer -->
+        <div class="policy-section">
+            <div class="policy-icon-wrapper">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    <line x1="12" y1="8" x2="12" y2="12" />
+                    <line x1="12" y1="16" x2="12.01" y2="16" />
+                </svg>
+            </div>
+            <div>
+                <h2 data-i18n="privacy_legal_title">4. Medical Disclaimer & Liability</h2>
+                <p data-i18n="privacy_legal_text">Renal Companion is a support tool, not a medical device. While we
+                    adhere to KDOQI guidelines:</p>
+                <ul class="policy-list">
+                    <li data-i18n="privacy_legal_list_1"><strong>No Doctor-Patient Relationship:</strong> Using this app
+                        does not create a medical relationship.</li>
+                    <li data-i18n="privacy_legal_list_2"><strong>Accuracy:</strong> While we strive for accuracy, food
+                        databases and lab interpretations can vary. Always verify critical decisions with your
+                        healthcare provider.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="policy-section">
+            <h2 data-i18n="privacy_contact_title">Contact Us</h2>
+            <p data-i18n="privacy_contact_text">For privacy-specific inquiries regarding your data rights:</p>
+            <a href="mailto:privacy@renalcompanion.app" class="contact-link">privacy@renalcompanion.app</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 data-i18n="footer_about_title">About Renal Companion</h4>
+                    <p data-i18n="footer_about_text">A clinical-grade nutrition management platform for Chronic Kidney
+                        Disease patients, built on
+                        KDOQI guidelines and powered by modern AI.</p>
+                    <div class="footer-disclaimer">
+                        <strong data-i18n="footer_disclaimer">Medical Disclaimer:</strong> <span
+                            data-i18n="footer_disclaimer_text">This app is for informational purposes only and does not
+                            replace professional medical advice.</span>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_resources">Resources</h4>
+                    <ul>
+                        <li><a href="index.html#clinical" data-i18n="footer_resources_docs">Clinical Documentation</a>
+                        </li>
+                        <li><a href="index.html#download" data-i18n="footer_resources_download">Download APK</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_researchers">For Researchers</h4>
+                    <ul>
+                        <li><a href="index.html#researchers" data-i18n="footer_researchers_citation">Citation Guide</a>
+                        </li>
+                        <li><a href="index.html#technology" data-i18n="footer_researchers_arch">Technical
+                                Architecture</a></li>
+                        <li><a href="mailto:research@renalcompanion.app" data-i18n="footer_researchers_contact">Research
+                                Inquiries</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_legal">Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html" data-i18n="footer_legal_privacy">Privacy Policy</a></li>
+                        <li><a href="index.html#terms" data-i18n="footer_legal_terms">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright">&copy; 2026 Renal Companion. Designed for clinical excellence.</p>
+                <p data-i18n="footer_tagline">Built with precision for CKD patient care.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/utils.js"></script>
+    <script src="./assets/js/i18n.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

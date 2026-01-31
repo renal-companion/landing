@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="meth_page_title">Renal Companion | Scientific Methodology</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+
+    <style>
+        .methodology-hero {
+            padding: 140px 0 80px;
+            background: linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 100%);
+            text-align: center;
+        }
+
+        .architecture-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+            margin-top: 60px;
+        }
+
+        .layer-card {
+            background: white;
+            padding: 40px;
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--neutral-200);
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+        }
+
+        .layer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-300);
+        }
+
+        .layer-number {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--primary-600);
+            font-weight: 800;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .formula-section {
+            background: var(--neutral-900);
+            color: white;
+            padding: 100px 0;
+            border-radius: 40px;
+            margin: 60px 0;
+        }
+
+        .formula-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .formula-card h3 {
+            color: var(--primary-400);
+            margin-bottom: 8px;
+        }
+
+        .formula-card p {
+            color: var(--neutral-400);
+            font-size: 0.95rem;
+        }
+
+        .code-snippet {
+            font-family: 'Courier New', monospace;
+            background: #1e1e1e;
+            color: #dcdcdc;
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            overflow-x: auto;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <!-- Logo area -->
+            <a href="index.html" class="nav-brand" data-i18n-aria="nav_logo_alt">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="Renal Companion Logo" class="nav-logo-img">
+                </div>
+                <span class="brand-name" data-i18n="nav_brand_name">RenalCompanion</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+                <li><a href="methodology.html" class="active" data-i18n="nav_features">Methodology</a></li>
+                <li><a href="index.html#technology" data-i18n="nav_technology">System Architecture</a></li>
+                <li><a href="index.html#clinical" data-i18n="nav_clinical">Clinical Protocols</a></li>
+                <li><a href="researchers.html" data-i18n="nav_researchers">For Researchers</a></li>
+
+                <!-- Mobile Only Menu Items -->
+                <li class="mobile-only"><a href="#download" data-i18n="nav_download">Download</a></li>
+            </ul>
+
+            <!-- Right Actions (Desktop) -->
+            <div class="nav-actions desktop-only">
+                <a href="#" class="lang-btn" aria-label="Switch Language">العربية</a>
+                <a href="#download" class="nav-cta" data-i18n="nav_download">Download</a>
+            </div>
+
+            <!-- Mobile Controls -->
+            <div class="mobile-controls mobile-only">
+                <a href="#" class="lang-btn small" aria-label="Switch Language">العربية</a>
+                <button class="nav-toggle" id="navToggle" data-i18n-aria="nav_toggle_aria">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="methodology-hero">
+        <div class="container">
+            <h1 class="hero-title">
+                <span data-i18n="meth_hero_title">Informatics Methodology &</span><br>
+                <span class="highlight" data-i18n="meth_hero_highlight">Clinical Validation</span>
+            </h1>
+            <p class="hero-subtitle" style="max-width: 700px; margin: 0 auto;" data-i18n="meth_hero_subtitle">
+                An overview of the deterministic and probabilistic protocols governing the Renal Companion inference
+                engine.
+            </p>
+        </div>
+    </header>
+
+    <!-- Dual Layer Architecture -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header centered">
+                <h2 class="section-title" data-i18n="meth_core_title">Dual-Layer Validation Architecture</h2>
+                <p class="section-subtitle" data-i18n="meth_core_desc">Renal Companion operates on a hybrid inference
+                    model that balances the absolute safety of clinical rules with the contextual flexibility of Large
+                    Language Models.</p>
+            </div>
+
+            <div class="architecture-grid">
+                <div class="layer-card">
+                    <span class="layer-number" data-i18n="meth_layer1_title">Layer 1: Deterministic Clinical
+                        Logic</span>
+                    <p data-i18n="meth_layer1_desc">A hard-coded rule engine based on KDOQI 2024 and KDIGO 2024 practice
+                        guidelines. Every dietary entry is validated against a 50-point safety checklist including CKD
+                        stage, GFR slope, and serum electrolyte levels.</p>
+                    <div class="code-snippet">
+                        if (K_intake > daily_limit) {
+                        trigger_overload_override();
+                        adjust_safety_buffer(0.85);
+                        }
+                    </div>
+                </div>
+
+                <div class="layer-card">
+                    <span class="layer-number" data-i18n="meth_layer2_title">Layer 2: Probabilistic RAG Inference</span>
+                    <p data-i18n="meth_layer2_desc">Retrieval-Augmented Generation (RAG) allows Murshid to synthesize
+                        advice within a restricted clinical sandbox. The AI is bounded by the deterministic layer,
+                        ensuring it never suggests intake exceeding calculated safety limits.</p>
+                    <div class="code-snippet">
+                        murshid.reason(query, patient_context)
+                        .map(KDOQI_Safe_Zones)
+                        .validate(Layer1_Constraints);
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinical Formulas -->
+    <section class="container">
+        <div class="formula-section">
+            <div class="container" style="max-width: 900px;">
+                <h2 style="color: white; margin-bottom: 40px; text-align: center;" data-i18n="meth_formula_title">
+                    Validated Clinical Formulas</h2>
+
+                <div class="formula-card">
+                    <h3 data-i18n="meth_f1_name">CKD-EPI (2021) Equation</h3>
+                    <p data-i18n="meth_f1_desc">Used for eGFR estimation without race variables, complying with the
+                        latest international clinical recommendations.</p>
+                </div>
+
+                <div class="formula-card">
+                    <h3 data-i18n="meth_f2_name">Modified Adjusted Body Weight (AjBW)</h3>
+                    <p data-i18n="meth_f2_desc">Critical for calculating protein requirements in obese or malnourished
+                        CKD patients to prevent over-prescription.</p>
+                </div>
+
+                <div class="formula-card">
+                    <h3 data-i18n="meth_f3_name">Corrected Calcium / PRAL Indices</h3>
+                    <p data-i18n="meth_f3_desc">Automated adjustment for Hypoalbuminemia and Potential Renal Acid Load
+                        monitoring.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Logic -->
+    <section class="section" style="padding-top: 40px;">
+        <div class="container centered">
+            <h2 class="section-title" data-i18n="meth_safety_title">Informatics Safety Guardrails</h2>
+            <p class="section-subtitle" style="max-width: 800px; margin: 0 auto;" data-i18n="meth_safety_desc">To
+                prevent 'hallucinations', the System Prompt incorporates a Clinically-Constrained Grammar (CCG) that
+                restricts output to KDOQI-verified nutrient ranges.</p>
+        </div>
+    </section>
+
+    <!-- Technical Appendix -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header centered">
+                <h2 class="section-title" data-i18n="meth_appendix_title">Forensic Clinical Documentation</h2>
+                <p class="section-subtitle" data-i18n="meth_appendix_subtitle">Technical specifications for internal
+                    logic and vision-based auditing</p>
+            </div>
+
+            <div class="architecture-grid">
+                <div class="layer-card">
+                    <span class="layer-number" data-i18n="meth_protocol_a_title">Protocol A: Phosphorus Additive
+                        Audit</span>
+                    <p data-i18n="meth_protocol_a_desc">The vision-based inference engine performs deep-parsing of
+                        ingredient lists to detect inorganic phosphorus additives, which have nearly 100% absorption
+                        rates in CKD patients.</p>
+                    <div class="code-snippet">
+                        TARGET_PHOS_ADDITIVES = {
+                        'E338', 'E339', 'E340', 'E341', 'E343',
+                        'E450', 'E451', 'E452',
+                        'Sodium Phosphate', 'Pyrophosphate'
+                        }
+                    </div>
+                </div>
+
+                <div class="layer-card">
+                    <span class="layer-number" data-i18n="meth_protocol_b_title">Protocol B: Weight-Based
+                        Recalibration</span>
+                    <p data-i18n="meth_protocol_b_desc">Protein and fluid dosing utilize the Adjusted Body Weight (AjBW)
+                        modification of the Hamwi formula for patients with BMI outliers (>30 or <18.5).< /p>
+                            <div class="code-snippet">
+                                AjBW = IBW + 0.25 * (ActualDryWeight - IBW)
+                                // Prevents over-prescription in obesity
+                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 data-i18n="footer_about_title">About Renal Companion</h4>
+                    <p data-i18n="footer_about_text">A clinical-grade nutrition management platform for Chronic Kidney
+                        Disease patients, built on
+                        KDOQI guidelines and powered by modern AI.</p>
+                    <div class="footer-disclaimer">
+                        <strong data-i18n="footer_disclaimer">Medical Disclaimer:</strong> <span
+                            data-i18n="footer_disclaimer_text">This app is for informational purposes only and does not
+                            replace professional medical advice.</span>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_resources">Resources</h4>
+                    <ul>
+                        <li><a href="index.html#clinical" data-i18n="footer_resources_docs">Clinical Documentation</a>
+                        </li>
+                        <li><a href="index.html#download" data-i18n="footer_resources_download">Download APK</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_researchers">For Researchers</h4>
+                    <ul>
+                        <li><a href="index.html#researchers" data-i18n="footer_researchers_citation">Citation Guide</a>
+                        </li>
+                        <li><a href="index.html#technology" data-i18n="footer_researchers_arch">Technical
+                                Architecture</a></li>
+                        <li><a href="mailto:research@renalcompanion.app" data-i18n="footer_researchers_contact">Research
+                                Inquiries</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_legal">Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html" data-i18n="footer_legal_privacy">Privacy Policy</a></li>
+                        <li><a href="index.html#terms" data-i18n="footer_legal_terms">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright">&copy; 2026 Renal Companion. Designed for clinical excellence.</p>
+                <p data-i18n="footer_tagline">Built with precision for CKD patient care.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/utils.js"></script>
+    <script src="./assets/js/i18n.js"></script>
+</body>
+
+</html>

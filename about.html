@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Renal Companion</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Cairo:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+
+    <style>
+        .about-hero {
+            padding: 120px 0 60px;
+            background: linear-gradient(180deg, rgba(236, 253, 245, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+            text-align: center;
+        }
+
+        .profile-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            align-items: start;
+            margin-bottom: 80px;
+        }
+
+        @media (min-width: 992px) {
+            .profile-section {
+                grid-template-columns: 350px 1fr;
+                gap: 60px;
+            }
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: var(--radius-2xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--neutral-200);
+            position: sticky;
+            top: 100px;
+        }
+
+        .profile-image-container {
+            height: 350px;
+            background: var(--neutral-100);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .profile-image-placeholder {
+            font-size: 80px;
+            color: var(--neutral-300);
+        }
+
+        .profile-details {
+            padding: 32px;
+            text-align: center;
+        }
+
+        .profile-name {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--neutral-900);
+            margin-bottom: 8px;
+            font-family: var(--font-heading);
+        }
+
+        .profile-role {
+            font-size: 0.95rem;
+            color: var(--primary-700);
+            font-weight: 600;
+            margin-bottom: 24px;
+            display: block;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .social-btn {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+            color: white;
+        }
+
+        .social-btn.whatsapp {
+            background: #25D366;
+        }
+
+        .social-btn.linkedin {
+            background: #0077b5;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .bio-content h2 {
+            font-size: 2rem;
+            margin-bottom: 24px;
+            color: var(--neutral-800);
+            position: relative;
+            display: inline-block;
+        }
+
+        .bio-content h2::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--primary-500);
+            border-radius: 2px;
+        }
+
+        .bio-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--neutral-600);
+            margin-bottom: 40px;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .expertise-card {
+            background: var(--neutral-50);
+            padding: 24px;
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--neutral-200);
+            transition: transform 0.2s;
+        }
+
+        .expertise-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-300);
+        }
+
+        .expertise-icon {
+            width: 48px;
+            height: 48px;
+            background: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            color: var(--primary-600);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .expertise-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--neutral-800);
+        }
+
+        .expertise-desc {
+            font-size: 0.9rem;
+            color: var(--neutral-600);
+            line-height: 1.6;
+        }
+
+        .supervisor-strip {
+            background: white;
+            border: 1px solid var(--neutral-200);
+            border-radius: var(--radius-2xl);
+            padding: 32px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-top: 60px;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 768px) {
+            .supervisor-strip {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <!-- Logo area -->
+            <a href="index.html" class="nav-brand" data-i18n-aria="nav_logo_alt">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="Renal Companion Logo" class="nav-logo-img">
+                </div>
+                <span class="brand-name" data-i18n="nav_brand_name">RenalCompanion</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="about.html" class="active" data-i18n="nav_about">About Us</a></li>
+                <li><a href="methodology.html" data-i18n="nav_features">Methodology</a></li>
+                <li><a href="index.html#technology" data-i18n="nav_technology">System Architecture</a></li>
+                <li><a href="index.html#clinical" data-i18n="nav_clinical">Clinical Protocols</a></li>
+                <li><a href="researchers.html" data-i18n="nav_researchers">For Researchers</a></li>
+
+                <!-- Mobile Only Menu Items -->
+                <li class="mobile-only"><a href="#download" data-i18n="nav_download">Download</a></li>
+            </ul>
+
+            <!-- Right Actions (Desktop) -->
+            <div class="nav-actions desktop-only">
+                <a href="#" class="lang-btn" aria-label="Switch Language">العربية</a>
+                <a href="#download" class="nav-cta" data-i18n="nav_download">Download</a>
+            </div>
+
+            <!-- Mobile Controls -->
+            <div class="mobile-controls mobile-only">
+                <a href="#" class="lang-btn small" aria-label="Switch Language">العربية</a>
+                <button class="nav-toggle" id="navToggle" data-i18n-aria="nav_toggle_aria">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="about-hero">
+        <div class="container">
+            <h1 class="hero-title">
+                <span data-i18n="about_hero_title">Pioneering the Future of</span>
+                <span class="highlight" data-i18n="about_hero_highlight">Renal Nutrition</span>
+            </h1>
+            <p class="hero-subtitle" data-i18n="about_hero_subtitle">Bridging the gap between advanced medical science
+                and cutting-edge software engineering.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="profile-section">
+            <!-- Profile Column -->
+            <aside>
+                <div class="profile-card">
+                    <div class="profile-image-container">
+                        <img src="./assets/images/feras_swed.jfif" alt="Dr. Feras Swed" data-i18n-alt="about_dev_name"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="profile-details">
+                        <h2 class="profile-name" data-i18n="about_dev_name">Dr. Feras Swed</h2>
+                        <span class="profile-role" data-i18n="about_dev_role_short">Medical Software Engineer</span>
+
+                        <div class="social-links">
+                            <a href="https://wa.me/967737972946" class="social-btn whatsapp" target="_blank"
+                                aria-label="WhatsApp" data-i18n-aria="about_whatsapp_aria">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.698c1.09.597 2.007.886 2.793.886 3.18 0 5.793-2.587 5.793-5.766.001-3.182-2.597-5.767-5.78-5.767zm12 5.766c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-4.305-1.291c-.328-.164-.958-.472-1.106-.526-.148-.054-.256-.081-.364.081-.108.163-.418.526-.513.635-.094.108-.189.121-.516-.043-.328-.164-1.386-.511-2.64-1.628-.971-.865-1.625-1.933-1.815-2.259-.19-.326-.021-.502.143-.665.148-.148.328-.383.491-.574.164-.191.218-.327.327-.545.109-.218.055-.409-.027-.573-.082-.164-.737-1.776-1.01-2.433-.265-.638-.535-.551-.737-.561-.19-.009-.409-.011-.627-.011-.218 0-.573.082-.873.409-.3.327-1.145 1.119-1.145 2.729 0 1.61 1.173 3.165 1.336 3.383.164.218 2.308 3.525 5.591 4.943 2.183.943 3.031.761 3.585.707.961-.093 2.112-.862 2.41-1.694.298-.832.298-1.545.209-1.694-.089-.149-.328-.239-.656-.403z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/feras-swed-722383205/" class="social-btn linkedin"
+                                target="_blank" aria-label="LinkedIn" data-i18n-aria="about_linkedin_aria">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Bio Column -->
+            <div class="bio-content">
+                <h2 data-i18n="about_bio_title">Bridging Medicine & Technology</h2>
+                <div class="bio-text" data-i18n="about_bio_text">
+                    Renal Companion is not just an app; it is the culmination of years of dual-discipline research.
+                    Created by Dr. Feras Swed, who holds expertise in both Therapeutic Nutrition and Advanced Software
+                    Engineering, the platform addresses a critical gap in nephrology care: the need for real-time,
+                    clinically accurate dietary feedback that adapts to complex patient variables.
+                </div>
+
+                <div class="expertise-grid">
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg>
+                        </div>
+                        <h3 class="expertise-title" data-i18n="about_exp_coding_title">Advanced Engineering</h3>
+                        <p class="expertise-desc" data-i18n="about_exp_coding_desc">Full-stack architecture using
+                            Flutter & BLoC to build offline-first, highly secure medical systems.</p>
+                    </div>
+
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                        </div>
+                        <h3 class="expertise-title" data-i18n="about_exp_medical_title">Clinical Nutrition</h3>
+                        <p class="expertise-desc" data-i18n="about_exp_medical_desc">Deep understanding of renal
+                            pathophysiology, KDOQI guidelines, and electrolyte management.</p>
+                    </div>
+
+                    <div class="expertise-card">
+                        <div class="expertise-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18" />
+                            </svg>
+                        </div>
+                        <h3 class="expertise-title" data-i18n="about_exp_research_title">Medical Research</h3>
+                        <p class="expertise-desc" data-i18n="about_exp_research_desc">Conducting evidence-based analysis
+                            to validate digital health interventions for chronic diseases.</p>
+                    </div>
+                </div>
+
+                <!-- Academic Supervisor Card (Redesigned) -->
+                <div style="margin-top: 60px; position: relative;">
+                    <div style="position: absolute; top: -15px; left: 32px; background: #DAA520; color: white; padding: 4px 16px; border-radius: 20px; font-weight: 700; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;"
+                        data-i18n="about_academic_validation">
+                        Academic Validation
+                    </div>
+                    <div
+                        style="background: white; border: 2px solid #DAA520; border-radius: var(--radius-2xl); padding: 40px; box-shadow: 0 20px 40px rgba(218, 165, 32, 0.1);">
+                        <div style="display: flex; align-items: start; gap: 24px; flex-wrap: wrap;">
+                            <div
+                                style="background: #FFFBF0; min-width: 80px; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #DAA520;">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#DAA520"
+                                    stroke-width="2">
+                                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                    <path
+                                        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                </svg>
+                            </div>
+                            <div style="flex: 1;">
+                                <h3 style="color: var(--neutral-900); font-size: 1.5rem; font-weight: 800; margin-bottom: 8px; font-family: var(--font-heading);"
+                                    data-i18n="about_supervisor_name">Prof. Dr. Najeb Al-Saremi</h3>
+                                <p style="color: #B4860B; font-weight: 700; font-size: 1rem; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.05em;"
+                                    data-i18n="about_supervisor_role">Dean of the College of Clinical Nutrition</p>
+                                <p style="color: var(--neutral-600); font-weight: 500;"
+                                    data-i18n="about_supervisor_uni">Sana'a University</p>
+
+                                <div
+                                    style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--neutral-200); font-size: 0.95rem; color: var(--neutral-600); line-height: 1.6;">
+                                    <span data-i18n="about_supervisor_desc">Ensuring rigorous adherence to the latest
+                                        clinical standards and academic excellence in every nutritional protocol
+                                        implemented.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 data-i18n="footer_about_title">About Renal Companion</h4>
+                    <p data-i18n="footer_about_text">A clinical-grade nutrition management platform for Chronic Kidney
+                        Disease patients, built on
+                        KDOQI guidelines and powered by modern AI.</p>
+                    <div class="footer-disclaimer">
+                        <strong data-i18n="footer_disclaimer">Medical Disclaimer:</strong> <span
+                            data-i18n="footer_disclaimer_text">This app is for informational purposes only and does not
+                            replace professional medical advice.</span>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_resources">Resources</h4>
+                    <ul>
+                        <li><a href="index.html#clinical" data-i18n="footer_resources_docs">Clinical Documentation</a>
+                        </li>
+                        <li><a href="index.html#download" data-i18n="footer_resources_download">Download APK</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_researchers">For Researchers</h4>
+                    <ul>
+                        <li><a href="index.html#researchers" data-i18n="footer_researchers_citation">Citation Guide</a>
+                        </li>
+                        <li><a href="index.html#technology" data-i18n="footer_researchers_arch">Technical
+                                Architecture</a></li>
+                        <li><a href="mailto:research@renalcompanion.app" data-i18n="footer_researchers_contact">Research
+                                Inquiries</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_legal">Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html" data-i18n="footer_legal_privacy">Privacy Policy</a></li>
+                        <li><a href="index.html#terms" data-i18n="footer_legal_terms">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright">&copy; 2026 Renal Companion. Designed for clinical excellence.</p>
+                <p data-i18n="footer_tagline">Built with precision for CKD patient care.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/utils.js"></script>
+    <script src="./assets/js/i18n.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

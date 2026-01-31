@@ -1,0 +1,264 @@
+/* ========================================
+   RENAL COMPANION LANDING PAGE
+   RTL (Right-to-Left) Styles for Arabic
+   ======================================== */
+
+/* Arabic Typography */
+[lang="ar"] {
+    font-family: 'Tajawal', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+[lang="ar"] .hero-title,
+[lang="ar"] .section-title,
+[lang="ar"] h1,
+[lang="ar"] h2,
+[lang="ar"] h3,
+[lang="ar"] h4 {
+    font-family: 'Tajawal', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+}
+
+[lang="ar"] code,
+[lang="ar"] pre {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    direction: ltr;
+    text-align: left;
+}
+
+/* Navigation */
+/* Navigation */
+[dir="rtl"] .nav-menu {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 992px) {
+    [dir="rtl"] .nav-menu {
+        flex-direction: column;
+    }
+}
+
+[dir="rtl"] .nav-brand {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .lang-toggle {
+    left: var(--space-6);
+    right: auto;
+}
+
+/* Hero Section */
+[dir="rtl"] .hero-content {
+    direction: rtl;
+}
+
+[dir="rtl"] .trust-badges {
+    direction: rtl;
+}
+
+[dir="rtl"] .hero-stats {
+    direction: rtl;
+}
+
+/* Button Icons */
+[dir="rtl"] .btn svg {
+    margin-right: 0;
+    margin-left: var(--space-2);
+}
+
+/* Lists */
+[dir="rtl"] .feature-highlights li,
+[dir="rtl"] .problem-list li,
+[dir="rtl"] .card-features li,
+[dir="rtl"] .validation-list li {
+    padding-left: 0;
+    padding-right: var(--space-6);
+}
+
+[dir="rtl"] .feature-highlights li::before {
+    left: auto;
+    right: 0;
+    content: '←';
+}
+
+[dir="rtl"] .problem-list li svg {
+    margin-right: 0;
+    margin-left: var(--space-2);
+}
+
+[dir="rtl"] .validation-list li::before {
+    left: auto;
+    right: 0;
+}
+
+/* Grids */
+[dir="rtl"] .solution-grid,
+[dir="rtl"] .feature-showcase,
+[dir="rtl"] .problem-grid {
+    direction: rtl;
+}
+
+/* Tab Buttons */
+[dir="rtl"] .tab-btn {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .tab-btn svg {
+    margin-right: 0;
+    margin-left: var(--space-3);
+}
+
+/* Inference Diagram */
+[dir="rtl"] .inference-diagram {
+    flex-direction: row;
+    /* Standard RTL behavior handles R-to-L flow */
+    direction: rtl;
+}
+
+[dir="rtl"] .inference-arrow {
+    transform: scaleX(-1);
+}
+
+/* Architecture Layers */
+[dir="rtl"] .arch-note {
+    border-left: none;
+    border-right: 4px solid var(--primary-700);
+}
+
+/* Citation Box */
+[dir="rtl"] .citation-text {
+    border-left: none;
+    border-right: 4px solid var(--primary-700);
+    direction: ltr;
+    text-align: left;
+}
+
+/* Footer */
+[dir="rtl"] .footer-grid {
+    direction: rtl;
+}
+
+[dir="rtl"] .footer-col ul {
+    padding-right: 0;
+}
+
+/* Install Guide */
+[dir="rtl"] .install-guide ol {
+    padding-right: var(--space-6);
+    padding-left: 0;
+}
+
+/* Research Features */
+[dir="rtl"] .research-features {
+    direction: rtl;
+}
+
+/* Download Container */
+[dir="rtl"] .download-container {
+    direction: rtl;
+}
+
+/* Formula Box - Keep LTR for code */
+[dir="rtl"] .formula-box {
+    direction: ltr;
+    text-align: left;
+}
+
+[dir="rtl"] .code-showcase {
+    direction: ltr;
+    text-align: left;
+}
+
+/* Specific Arabic Font Weights */
+[lang="ar"] {
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-black: 800;
+}
+
+/* Better Line Height for Arabic */
+[lang="ar"] p,
+[lang="ar"] li {
+    line-height: 1.9;
+}
+
+[lang="ar"] .hero-subtitle,
+[lang="ar"] .section-subtitle {
+    line-height: 1.8;
+}
+
+/* Adjust spacing for Arabic text */
+[lang="ar"] .hero-title {
+    line-height: 1.3;
+}
+
+/* Number formatting for Arabic */
+[lang="ar"] .stat-number,
+[lang="ar"] .big-stat,
+[lang="ar"] .big-number {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Keep certain elements LTR even in RTL mode */
+[dir="rtl"] .tech-badge,
+[dir="rtl"] .nutrient-badge,
+[dir="rtl"] .validation-badge {
+    direction: ltr;
+}
+
+/* Align arrows properly in RTL */
+[dir="rtl"] .feature-highlights li::before {
+    transform: scaleX(-1);
+}
+
+/* Mobile RTL Adjustments */
+@media (max-width: 768px) {
+    [dir="rtl"] .hero-content {
+        text-align: center;
+    }
+
+    [dir="rtl"] .section-header {
+        text-align: center;
+    }
+
+    [dir="rtl"] .inference-diagram {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    [dir="rtl"] .inference-arrow {
+        transform: rotate(90deg);
+        /* Point down */
+        margin: 8px 0;
+    }
+}
+
+/* Informatics & Authority RTL */
+[dir="rtl"] .step-badge {
+    right: auto;
+    left: var(--space-8);
+}
+
+[dir="rtl"] .ana-feat {
+    text-align: right;
+}
+
+[dir="rtl"] .math-backdrop {
+    direction: ltr;
+    text-align: left;
+}
+
+[dir="rtl"] .compliance-table th,
+[dir="rtl"] .compliance-table td {
+    text-align: right;
+}
+
+/* Footer RTL */
+[dir="rtl"] .footer-col {
+    text-align: right;
+}
+
+[dir="rtl"] .footer-col ul {
+    padding: 0;
+}
