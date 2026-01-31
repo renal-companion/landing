@@ -448,7 +448,7 @@ const translations = {
         about_supervision_title: "Academic Supervision",
         about_contact_btn: "Get in Touch",
         res_btn_copy: "Copy",
-        res_citation_code: "Renal Companion Research Initiative. (2026). Real-World Nutritional Adherence in CKD Patients [Data set]. Renal Companion. https://renalcompanion.app/research",
+        res_citation_code: "Renal Companion Research Initiative. (2026). Real-World Nutritional Adherence in CKD Patients [Data set]. Renal Companion. https://renal-companion.github.io/landing/researchers",
 
         // Download Modal
         modal_title: "Coming Soon!",
@@ -891,7 +891,7 @@ const translations = {
         res_cite_subtitle: "إذا استخدمت بياناتنا، فإن الإسناد الصحيح مطلوب. هذا يساعد في بناء مرجعيتنا الأكاديمية.",
         res_cite_format_label: "صيغة الاقتباس القياسية (APA):",
         res_cite_note: "جميع مجموعات البيانات مرخصة بموجب <strong>CC BY-NC 4.0</strong>. يُحظر تماماً الاستخدام للنمذجة التجارية أو إعادة البيع بدون ترخيص منفصل.",
-        res_citation_code: "مبادرة أبحاث مرافق الكلى. (2026). الالتزام الغذائي الواقعي لدى مرضى الكلى المزمن [مجموعة بيانات]. مرافق الكلى. https://renalcompanion.app/research",
+        res_citation_code: "مبادرة أبحاث مرافق الكلى. (2026). الالتزام الغذائي الواقعي لدى مرضى الكلى المزمن [مجموعة بيانات]. مرافق الكلى. https://renal-companion.github.io/landing/researchers",
 
         // Download Modal
         modal_title: "قريباً!",
