@@ -294,10 +294,11 @@ const translations = {
         footer_tagline: "Built with precision for CKD patient care.",
 
         // Meta Tags
-        meta_title: "Renal Companion | Clinical-Grade CKD Nutrition Management",
-        meta_description: "KDOQI-compliant nutrition tracker for Chronic Kidney Disease. AI-powered guidance, 2000+ foods, offline-first architecture.",
-        meta_og_title: "Renal Companion | Clinical CKD Nutrition Management",
-        meta_og_description: "KDOQI-compliant nutrition tracker powered by AI. Precision nutrient tracking.",
+        // Meta Tags & Branding
+        meta_title: "Renal Companion | Your Digital Guide for Kidney Health & Nutrition",
+        meta_description: "Empowering renal patients with smart tools for meal planning, lab tracking, and medication management. Developed by Dr. Feras Swed to simplify kidney care.",
+        meta_og_title: "Renal Companion - Digital Health for Kidney Patients",
+        meta_og_description: "A clinical-grade nutrition platform developed by Dr. Feras Swed, bridging medical accuracy with advanced software engineering.",
 
         // Secondary Pages (About & Privacy)
         nav_home: "Home",
@@ -306,13 +307,14 @@ const translations = {
         about_hero_highlight: "Renal Nutrition",
         about_hero_subtitle: "Bridging the gap between advanced medical science and cutting-edge software engineering.",
         about_dev_badge: "The Visionary & Developer",
-        about_dev_name: "Dr. Feras Swed",
-        about_dev_role_short: "Clinical Informatics Researcher",
+        about_dev_name: "Dr. Feras Ezz-Addin Suwaid",
+        about_dev_role: "Senior Full-Stack Architect & Clinical Nutritionist",
+        about_dev_role_short: "Health-Tech Solutions Architect",
         about_dev_title1: "Therapeutic Nutrition Specialist",
         about_dev_title2: "Advanced Medical Software Engineer",
         about_dev_title3: "Medical Researcher",
-        about_bio_title: "Synthesizing Medicine & Informatics",
-        about_bio_text: "Renal Companion is more than an application; it is a validated research platform born from dual-discipline inquiry. Developed by Dr. Feras Swed—an expert in Clinical Nutrition and Software Informatics—the platform bridges the critical gap between guideline-based theory and real-world patient data orchestration.",
+        about_bio_title: "The Synergy of Code & Cure",
+        about_bio_text: "Renal Companion is the result of a unique dual-expertise. Dr. Feras Suwaid combines a formal clinical background in Therapeutic Nutrition (Queen Arwa University) with senior-level software architecture skills. Having architected complex ERP systems and Food Safety protocols for major organizations, he now applies 'Clean Architecture' principles to solve critical healthcare challenges.",
         about_exp_coding_title: "Clinical Informatics",
         about_exp_coding_desc: "Specialized in medical system architecture, utilizing Flutter and BLoC for high-fidelity, local-first data processing.",
         about_exp_medical_title: "Nephro-pathophysiology",
@@ -854,10 +856,11 @@ const translations = {
         about_contact_btn: "تواصل معي",
 
         // Meta Tags
-        meta_title: "مرافق الكلى | إدارة تغذية مرضى الكلى المزمن بدرجة سريرية",
-        meta_description: "متتبع تغذية متوافق مع KDOQI لمرضى الكلى المزمن. إرشادات مدعومة بالذكاء الاصطناعي، 2000+ صنف غذائي، معمارية 'دون اتصال أولاً'.",
-        meta_og_title: "مرافق الكلى | إدارة تغذية سريرية لمرضى الكلى",
-        meta_og_description: "متتبع تغذية متوافق مع KDOQI مدعوم بالذكاء الاصطناعي. تتبع دقيق للعناصر الغذائية.",
+        // Meta Tags & Branding
+        meta_title: "Renal Companion | رفيقك الرقمي لصحة الكلى والتغذية العلاجية",
+        meta_description: "تمكين مرضى الكلى بأدوات ذكية لتخطيط الوجبات، تتبع الفحوصات المخبرية، وإدارة الأدوية. تطبيق صُمم بواسطة د. فراس سويد لتبسيط رعاية مرضى الكلى.",
+        meta_og_title: "مرافق الكلى - الحل الرقمي المتكامل لمرضى الكلى",
+        meta_og_description: "تطبيق متطور لمساعدة مرضى الكلى في تتبع حالتهم الصحية وتخطيط تغذيتهم العلاجية بدقة. تطوير د. فراس سويد.",
 
         // Secondary Pages (About & Privacy)
         nav_home: "الرئيسية",
