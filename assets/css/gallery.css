@@ -1,0 +1,483 @@
+/* ========================================
+   RENAL COMPANION - GALLERY PAGE
+   Showcase app features with screenshots
+   ======================================== */
+
+/* Specific Gallery Variables - Extends main.css tokens */
+:root {
+    --gallery-card-bg: rgba(255, 255, 255, 0.82);
+    --gallery-card-border: rgba(255, 255, 255, 0.4);
+    --gallery-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+
+.gallery-hero {
+    padding: calc(var(--navbar-height, 80px) + var(--space-24)) 0 var(--space-24);
+    background: var(--gradient-primary);
+    color: white;
+    text-align: center;
+}
+
+.gallery-hero .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.gallery-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: var(--space-6);
+    line-height: 1.2;
+}
+
+.gallery-hero .hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: var(--space-4);
+    opacity: 0.95;
+}
+
+.gallery-hero .hero-description {
+    font-size: 1.125rem;
+    opacity: 0.9;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ========================================
+   FEATURE CATEGORIES
+   ======================================== */
+
+.feature-category {
+    padding: var(--space-24) 0;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.feature-category:nth-child(even) {
+    background: linear-gradient(to bottom, #f9fafb 0%, #ffffff 100%);
+}
+
+.feature-category.alt-layout .screenshot-carousel {
+    flex-direction: row-reverse;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Category Header */
+.category-header {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-6);
+    margin-bottom: var(--space-12);
+}
+
+.category-icon {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-lg);
+    color: white;
+    box-shadow: var(--shadow-md);
+}
+
+.category-icon.ai-icon {
+    background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+}
+
+.category-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--neutral-900);
+    margin-bottom: var(--space-3);
+}
+
+.category-header p {
+    font-size: 1.125rem;
+    color: var(--neutral-600);
+    line-height: 1.6;
+}
+
+/* ========================================
+   SCREENSHOT CAROUSEL
+   ======================================== */
+
+.screenshot-carousel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-12);
+    align-items: center;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    padding: var(--space-4);
+    /* Reduced padding for more image space */
+    box-shadow: var(--shadow-lg);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Gap removed to simplify JS math; spacing handled by card padding */
+}
+
+.screenshot-card {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center images horizontally */
+    justify-content: center;
+    gap: var(--space-4);
+    box-sizing: border-box;
+    padding: 0 var(--space-2);
+}
+
+.screenshot-card img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+    cursor: pointer;
+}
+
+.screenshot-card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 16px 64px rgba(0, 0, 0, 0.2);
+}
+
+.screenshot-caption {
+    text-align: center;
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* Carousel Navigation Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: var(--primary);
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background: white;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn.prev {
+    left: var(--space-4);
+}
+
+.carousel-btn.next {
+    right: var(--space-4);
+}
+
+.carousel-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+/* ========================================
+   FEATURE HIGHLIGHTS
+   ======================================== */
+
+.feature-highlights {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.feature-highlights li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    font-size: 1rem;
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.feature-highlights li::before {
+    content: "✓";
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    color: white;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+/* ========================================
+   CTA SECTION
+   ======================================== */
+
+.gallery-cta {
+    padding: var(--space-24) 0;
+    background: linear-gradient(135deg, #0D7373 0%, #10A5A5 100%);
+    color: white;
+    text-align: center;
+}
+
+.gallery-cta h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: var(--space-4);
+}
+
+.gallery-cta p {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-8);
+    opacity: 0.95;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-cta .btn {
+    background: white;
+    color: var(--primary);
+    font-weight: 700;
+    padding: var(--space-4) var(--space-8);
+    font-size: 1.125rem;
+}
+
+.gallery-cta .btn:hover {
+    background: #f9fafb;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 1024px) {
+    .screenshot-carousel {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+
+    .feature-category.alt-layout .screenshot-carousel {
+        flex-direction: column;
+    }
+
+    .category-header h2 {
+        font-size: 1.75rem;
+    }
+
+    .gallery-hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-hero {
+        padding: calc(var(--navbar-height) + var(--space-12)) 0 var(--space-12);
+    }
+
+    .gallery-hero h1 {
+        font-size: 2rem;
+    }
+
+    .gallery-hero .hero-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .gallery-hero .hero-description {
+        font-size: 1rem;
+    }
+
+    .category-header {
+        flex-direction: column;
+        gap: var(--space-4);
+    }
+
+    .category-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .category-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .category-header p {
+        font-size: 1rem;
+    }
+
+    .carousel-container {
+        padding: var(--space-6);
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
+
+    .screenshot-card img {
+        max-width: 100%;
+    }
+
+    .feature-highlights li {
+        font-size: 0.9375rem;
+    }
+
+    .gallery-cta h2 {
+        font-size: 2rem;
+    }
+
+    .gallery-cta p {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .gallery-hero .hero-subtitle {
+        font-size: 1.125rem;
+    }
+
+    .category-header h2 {
+        font-size: 1.25rem;
+    }
+
+    .carousel-container {
+        padding: var(--space-4);
+        border-radius: 16px;
+    }
+
+    .carousel-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+
+    .carousel-btn.prev {
+        left: var(--space-2);
+    }
+
+    .carousel-btn.next {
+        right: var(--space-2);
+    }
+
+    .gallery-cta h2 {
+        font-size: 1.75rem;
+    }
+
+    .gallery-cta p {
+        font-size: 1rem;
+    }
+}
+
+/* ========================================
+   RTL SUPPORT
+   ======================================== */
+
+[dir="rtl"] .category-header {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .feature-highlights li {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .carousel-btn.prev {
+    left: auto;
+    right: var(--space-4);
+}
+
+[dir="rtl"] .carousel-btn.next {
+    right: auto;
+    left: var(--space-4);
+}
+
+@media (max-width: 480px) {
+    [dir="rtl"] .carousel-btn.prev {
+        right: var(--space-2);
+    }
+
+    [dir="rtl"] .carousel-btn.next {
+        left: var(--space-2);
+    }
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+.screenshot-card img:focus {
+    outline: 3px solid var(--primary);
+    outline-offset: 4px;
+}
+
+.carousel-btn:focus {
+    outline: 3px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    .feature-category {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    .carousel-track {
+        transition: none;
+    }
+
+    .screenshot-card img {
+        transition: none;
+    }
+
+    .carousel-btn {
+        transition: none;
+    }
+}

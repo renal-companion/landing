@@ -2002,3 +2002,253 @@
         opacity: 1;
     }
 }
+
+/* ========================================
+   PREMIUM DOWNLOAD SECTION
+   ======================================== */
+
+.download-premium {
+    padding: var(--space-24) 0;
+    background: var(--gradient-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.download-premium::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(16, 165, 165, 0.4) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.download-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+    align-items: flex-start;
+}
+
+@media (min-width: 1024px) {
+    .download-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Glass Panel Base */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius-3xl);
+    padding: var(--space-8);
+}
+
+/* Installation Steps */
+.installation-guide h3 {
+    color: white;
+    font-size: 1.75rem;
+    margin-bottom: var(--space-8);
+    text-align: center;
+}
+
+.steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.step-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+    padding: var(--space-5);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-xl);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all var(--transition-base);
+}
+
+.step-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(10px);
+}
+
+[dir="rtl"] .step-item:hover {
+    transform: translateX(-10px);
+}
+
+.step-number {
+    width: 36px;
+    height: 36px;
+    background: white;
+    color: var(--primary-700);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.step-text {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Download Card (Right Column) */
+.download-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.95) 100%);
+    padding: var(--space-12);
+    border-radius: var(--radius-3xl);
+    color: var(--primary-900);
+    box-shadow: 0 30px 60px rgba(0, 77, 77, 0.15), 0 10px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    position: relative;
+    overflow: hidden;
+}
+
+.download-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle at top right, rgba(16, 165, 165, 0.1), transparent 70%);
+    pointer-events: none;
+}
+
+.download-card h2 {
+    font-size: 2.75rem;
+    font-weight: 800;
+    margin-bottom: var(--space-4);
+    color: var(--primary-700);
+    letter-spacing: -0.02em;
+}
+
+.download-card .subtitle {
+    font-size: 1rem;
+    color: var(--neutral-600);
+    margin-bottom: var(--space-10);
+    max-width: 420px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.info-box.glass-panel-light {
+    width: 100%;
+    margin-bottom: var(--space-10);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background: rgba(16, 165, 165, 0.03);
+    border: 1px solid rgba(16, 165, 165, 0.1);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-4);
+}
+
+.download-card .info-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-5) var(--space-4);
+    border-bottom: 1px dashed rgba(16, 165, 165, 0.15);
+}
+
+.download-card .info-item:last-child {
+    border-bottom: none;
+}
+
+.download-card .info-label {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    font-weight: 700;
+    color: var(--primary-700);
+    font-size: 0.9375rem;
+}
+
+.download-card .info-label svg {
+    width: 22px;
+    height: 22px;
+    color: var(--primary-500);
+    stroke-width: 2.5;
+}
+
+.download-card .info-value {
+    font-weight: 600;
+    color: var(--neutral-800);
+    font-size: 0.9375rem;
+}
+
+/* Premium Download Button */
+.btn-premium-download {
+    width: 100%;
+    padding: var(--space-5);
+    background: var(--success);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+    transition: all var(--transition-base);
+    border: none;
+    cursor: pointer;
+    margin-bottom: var(--space-6);
+}
+
+.btn-premium-download:hover {
+    background: #059669;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(16, 185, 129, 0.4);
+}
+
+.secure-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--neutral-600);
+    padding: var(--space-3);
+    background: var(--neutral-100);
+    border-radius: var(--radius-lg);
+    width: 100%;
+}
+
+.secure-badge svg {
+    color: var(--success);
+    width: 16px;
+    height: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .download-card h2 {
+        font-size: 2.25rem;
+    }
+
+    .glass-panel {
+        padding: var(--space-6);
+    }
+
+    .step-item {
+        gap: var(--space-4);
+    }
+}

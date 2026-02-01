@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="gallery_page_title">App Gallery | Renal Companion</title>
+    <meta name="description" data-i18n="gallery_page_desc"
+        content="Explore Renal Companion's features through screenshots - AI assistant, lab analytics, nutrition tracking, and more.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+    <link rel="stylesheet" href="./assets/css/animations.css">
+    <link rel="stylesheet" href="./assets/css/rtl.css">
+    <link rel="stylesheet" href="./assets/css/gallery.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <!-- Logo area -->
+            <a href="index.html" class="nav-brand" data-i18n-aria="nav_logo_alt">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="Renal Companion Logo" class="nav-logo-img">
+                </div>
+                <span class="brand-name" data-i18n="nav_brand_name">RenalCompanion</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+                <li><a href="gallery.html" class="active" data-i18n="nav_gallery">Gallery</a></li>
+                <li><a href="methodology.html" data-i18n="nav_features">Methodology</a></li>
+                <li><a href="#technology" data-i18n="nav_technology">System Architecture</a></li>
+                <li><a href="#clinical" data-i18n="nav_clinical">Clinical Protocols</a></li>
+                <li><a href="researchers.html" data-i18n="nav_researchers">For Researchers</a></li>
+
+                <!-- Mobile Only Menu Items -->
+                <li class="mobile-only"><a href="#download" data-i18n="nav_download">Download</a></li>
+            </ul>
+
+            <!-- Right Actions (Desktop) -->
+            <div class="nav-actions desktop-only">
+                <a href="#" class="lang-btn" aria-label="Switch Language">العربية</a>
+                <a href="#download" class="nav-cta" data-i18n="nav_download">Download</a>
+            </div>
+
+            <!-- Mobile Controls -->
+            <div class="mobile-controls mobile-only">
+                <a href="#" class="lang-btn small mobile-lang" aria-label="Switch Language">العربية</a>
+                <button class="nav-toggle" id="navToggle" data-i18n-aria="nav_toggle_aria">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gallery-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n="gallery_hero_title">Experience Renal Companion</h1>
+                <p class="hero-subtitle" data-i18n="gallery_hero_subtitle">A Visual Journey Through Clinical Excellence
+                </p>
+                <p class="hero-description" data-i18n="gallery_hero_desc">Explore our comprehensive CKD management app
+                    through real screenshots showcasing AI-powered nutrition guidance, lab analytics, and personalized
+                    care.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category 1: Home Dashboard -->
+    <section class="feature-category">
+        <div class="container">
+            <div class="category-header">
+                <div class="category-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                </div>
+                <div>
+                    <h2 data-i18n="gallery_cat1_title">Home Dashboard & Overview</h2>
+                    <p data-i18n="gallery_cat1_desc">Your personalized health hub with quick access to all essential
+                        features and real-time kidney function tracking.</p>
+                </div>
+            </div>
+
+            <div class="screenshot-carousel" data-category="dashboard">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" aria-label="Previous">‹</button>
+                    <div class="carousel-track">
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-012850.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-012850.jpg" alt="Home Dashboard"
+                                loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat1_img1">Complete home screen with all
+                                main features</p>
+                        </div>
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-014135.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-014135.jpg" alt="Weekly Tracking"
+                                loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat1_img2">Weekly nutrition tracking with
+                                colorful progress bars</p>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" aria-label="Next">›</button>
+                </div>
+                <ul class="feature-highlights">
+                    <li data-i18n="gallery_cat1_feat1">Clean, modern interface with gradient design</li>
+                    <li data-i18n="gallery_cat1_feat2">Quick access to all major features</li>
+                    <li data-i18n="gallery_cat1_feat3">Weekly nutrition overview with visual progress indicators</li>
+                    <li data-i18n="gallery_cat1_feat4">CKD stage tracking with kidney function percentage</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category 2: Lab Analytics -->
+    <section class="feature-category alt-layout">
+        <div class="container">
+            <div class="category-header">
+                <div class="category-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="20" x2="18" y2="10"></line>
+                        <line x1="12" y1="20" x2="12" y2="4"></line>
+                        <line x1="6" y1="20" x2="6" y2="14"></line>
+                    </svg>
+                </div>
+                <div>
+                    <h2 data-i18n="gallery_cat2_title">Lab Analytics & eGFR Tracking</h2>
+                    <p data-i18n="gallery_cat2_desc">Interactive charts and trend analysis for kidney function markers
+                        with intelligent warning zones.</p>
+                </div>
+            </div>
+
+            <div class="screenshot-carousel" data-category="analytics">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" aria-label="Previous">‹</button>
+                    <div class="carousel-track">
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-013235.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-013235.jpg" alt="eGFR Trend Chart"
+                                loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat2_img1">eGFR trend chart with time
+                                filters</p>
+                        </div>
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-014611.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-014611.jpg" alt="Calorie Tracking"
+                                loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat2_img2">Detailed calorie tracking chart
+                            </p>
+                        </div>
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-014624.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-014624.jpg" alt="Protein Trend"
+                                loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat2_img3">Protein intake trend with
+                                warning zone</p>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" aria-label="Next">›</button>
+                </div>
+                <ul class="feature-highlights">
+                    <li data-i18n="gallery_cat2_feat1">Interactive trend charts for eGFR, creatinine, and kidney
+                        markers</li>
+                    <li data-i18n="gallery_cat2_feat2">Time-based filtering (week, month, year)</li>
+                    <li data-i18n="gallery_cat2_feat3">Visual warning zones for unsafe levels</li>
+                    <li data-i18n="gallery_cat2_feat4">Historical data tracking with color-coded progress</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category 3: AI Assistant -->
+    <section class="feature-category">
+        <div class="container">
+            <div class="category-header">
+                <div class="category-icon ai-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        <circle cx="9" cy="10" r="1" fill="currentColor"></circle>
+                        <circle cx="15" cy="10" r="1" fill="currentColor"></circle>
+                    </svg>
+                </div>
+                <div>
+                    <h2 data-i18n="gallery_cat3_title">AI Assistant (Murshid)</h2>
+                    <p data-i18n="gallery_cat3_desc">Intelligent medical guidance powered by Google Gemini, providing
+                        personalized advice based on your CKD stage.</p>
+                </div>
+            </div>
+
+            <div class="screenshot-carousel" data-category="ai">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" aria-label="Previous">‹</button>
+                    <div class="carousel-track">
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-014153.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-014153.jpg" alt="Murshid Welcome"
+                                loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat3_img1">Murshid AI welcome screen with
+                                suggested questions</p>
+                        </div>
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-014226.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-014226.jpg" alt="Medical Guidance"
+                                loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat3_img2">Detailed medical guidance about
+                                phosphorus and CKD</p>
+                        </div>
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-014406.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-014406.jpg" alt="AI Response"
+                                loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat3_img3">Comprehensive AI response with
+                                dietary recommendations</p>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" aria-label="Next">›</button>
+                </div>
+                <ul class="feature-highlights">
+                    <li data-i18n="gallery_cat3_feat1">Powered by Google Gemini AI for accurate medical information
+                    </li>
+                    <li data-i18n="gallery_cat3_feat2">Personalized guidance based on your CKD stage</li>
+                    <li data-i18n="gallery_cat3_feat3">Suggested questions for easy interaction</li>
+                    <li data-i18n="gallery_cat3_feat4">Evidence-based nutritional and lifestyle advice</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category 4: Food Search -->
+    <section class="feature-category alt-layout">
+        <div class="container">
+            <div class="category-header">
+                <div class="category-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h2 data-i18n="gallery_cat4_title">Smart Food Search with Visual Recognition</h2>
+                    <p data-i18n="gallery_cat4_desc">Find nutritional information instantly by searching or taking a
+                        photo of your food.</p>
+                </div>
+            </div>
+
+            <div class="screenshot-carousel" data-category="food">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" aria-label="Previous">‹</button>
+                    <div class="carousel-track">
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-013331.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-013331.jpg" alt="Food Search Options"
+                                loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat4_img1">Choose manual search or camera
+                                scan</p>
+                        </div>
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-013706.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-013706.jpg" alt="Visual Recognition"
+                                loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat4_img2">Instant visual food recognition
+                                (banana)</p>
+                        </div>
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-013728.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-013728.jpg" alt="Nutrition Details"
+                                loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat4_img3">Detailed nutrition modal with
+                                colorful bars</p>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" aria-label="Next">›</button>
+                </div>
+                <ul class="feature-highlights">
+                    <li data-i18n="gallery_cat4_feat1">Dual input: manual search or camera scan</li>
+                    <li data-i18n="gallery_cat4_feat2">Instant visual food recognition</li>
+                    <li data-i18n="gallery_cat4_feat3">Color-coded nutrient percentage bars</li>
+                    <li data-i18n="gallery_cat4_feat4">Portion size customization</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category 5: Label Scanner -->
+    <section class="feature-category">
+        <div class="container">
+            <div class="category-header">
+                <div class="category-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"></circle>
+                        <polyline points="21 15 16 10 5 21"></polyline>
+                    </svg>
+                </div>
+                <div>
+                    <h2 data-i18n="gallery_cat5_title">Label Scanner with Safety Warnings</h2>
+                    <p data-i18n="gallery_cat5_desc">Scan product labels to instantly detect harmful additives and get
+                        personalized safety warnings.</p>
+                </div>
+            </div>
+
+            <div class="screenshot-carousel" data-category="scanner">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" aria-label="Previous">‹</button>
+                    <div class="carousel-track">
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-013825.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-013825.jpg" alt="Label Scan Warning"
+                                loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat5_img1">Orange juice label with safety
+                                warning</p>
+                        </div>
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-013918.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-013918.jpg" alt="Nutrition Facts"
+                                loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat5_img2">Nutrition facts with high sodium
+                                alert</p>
+                        </div>
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-013928.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-013928.jpg" alt="Scan History"
+                                loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat5_img3">Scan history for quick reference
+                            </p>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" aria-label="Next">›</button>
+                </div>
+                <ul class="feature-highlights">
+                    <li data-i18n="gallery_cat5_feat1">Real-time product label scanning</li>
+                    <li data-i18n="gallery_cat5_feat2">Automatic warnings for high phosphorus/sodium/potassium</li>
+                    <li data-i18n="gallery_cat5_feat3">Bilingual OCR (Arabic/English)</li>
+                    <li data-i18n="gallery_cat5_feat4">Scan history for tracking</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category 6: Nutrition Tracking -->
+    <section class="feature-category alt-layout">
+        <div class="container">
+            <div class="category-header">
+                <div class="category-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 3v18h18"></path>
+                        <path d="m19 9-5 5-4-4-3 3"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h2 data-i18n="gallery_cat6_title">Nutrition Tracking & Daily Logs</h2>
+                    <p data-i18n="gallery_cat6_desc">Comprehensive daily nutrition logging with automatic nutrient
+                        calculation and visual progress tracking.</p>
+                </div>
+            </div>
+
+            <div class="screenshot-carousel" data-category="tracking">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" aria-label="Previous">‹</button>
+                    <div class="carousel-track">
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-014424.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-014424.jpg" alt="Daily Log" loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat6_img1">Daily nutrition log with all
+                                meals</p>
+                        </div>
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-014452.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-014452.jpg" alt="Daily Breakdown"
+                                loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat6_img2">Detailed daily breakdown with
+                                charts</p>
+                        </div>
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-014510.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-014510.jpg" alt="Nutrient List"
+                                loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat6_img3">Full nutrient list with progress
+                                bars</p>
+                        </div>
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-014659.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-014659.jpg" alt="Meal Entry"
+                                loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat6_img4">Meal entry modal with nutrient
+                                details</p>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" aria-label="Next">›</button>
+                </div>
+                <ul class="feature-highlights">
+                    <li data-i18n="gallery_cat6_feat1">Automatic nutrient calculation for all meals</li>
+                    <li data-i18n="gallery_cat6_feat2">Visual progress bars for key nutrients</li>
+                    <li data-i18n="gallery_cat6_feat3">Calorie, protein, phosphorus, potassium, sodium tracking</li>
+                    <li data-i18n="gallery_cat6_feat4">Interactive charts showing daily trends</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category 7: Patient Profile -->
+    <section class="feature-category">
+        <div class="container">
+            <div class="category-header">
+                <div class="category-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+                <div>
+                    <h2 data-i18n="gallery_cat7_title">Patient Profile & Settings</h2>
+                    <p data-i18n="gallery_cat7_desc">Personalized profiles with CKD staging, customizable targets, and
+                        comprehensive health tracking.</p>
+                </div>
+            </div>
+
+            <div class="screenshot-carousel" data-category="profile">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" aria-label="Previous">‹</button>
+                    <div class="carousel-track">
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-014015.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-014015.jpg" alt="Patient Profile"
+                                loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat7_img1">Patient profile with CKD Stage 1
+                                badge</p>
+                        </div>
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-014028.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-014028.jpg" alt="Settings" loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat7_img2">Settings page with
+                                personalization options</p>
+                        </div>
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-031757.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-031757.jpg" alt="Data Entry"
+                                loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat7_img3">Detailed patient data entry form
+                            </p>
+                        </div>
+                        <div class="screenshot-card">
+                            <img src="./assets/scrin/Screenshot_20260201-031814.jpg"
+                                data-src="./assets/scrin/Screenshot_20260201-031814.jpg" alt="Vital Signs"
+                                loading="lazy">
+                            <p class="screenshot-caption" data-i18n="gallery_cat7_img4">Vital signs input modal</p>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" aria-label="Next">›</button>
+                </div>
+                <ul class="feature-highlights">
+                    <li data-i18n="gallery_cat7_feat1">Personalized profiles with CKD staging</li>
+                    <li data-i18n="gallery_cat7_feat2">Customizable daily nutrient targets</li>
+                    <li data-i18n="gallery_cat7_feat3">Comorbidity tracking (diabetes, hypertension)</li>
+                    <li data-i18n="gallery_cat7_feat4">Vital signs monitoring (weight, BP, heart rate)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Download Section -->
+    <section class="download-premium reveal-on-scroll" id="download">
+        <div class="container">
+            <div class="download-grid">
+                <!-- Installation Guide (Left Column) -->
+                <div class="installation-guide glass-panel">
+                    <h3 data-i18n="download_steps_title">Installation Steps</h3>
+                    <div class="steps-list">
+                        <div class="step-item">
+                            <span class="step-number">1</span>
+                            <p class="step-text" data-i18n="download_guide_1">Press the 'Download APK' button above</p>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-number">2</span>
+                            <p class="step-text" data-i18n="download_guide_2">Once the download completes, open the APK
+                                file</p>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-number">3</span>
+                            <p class="step-text" data-i18n="download_guide_3">Enable 'Install from Unknown Sources' if
+                                prompted</p>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-number">4</span>
+                            <p class="step-text" data-i18n="download_guide_4">Tap 'Install' and wait for the process to
+                                finish</p>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-number">5</span>
+                            <p class="step-text" data-i18n="download_guide_5">Open Renal Companion and start your
+                                journey!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Download Card (Right Column) -->
+                <div class="download-card">
+                    <h2 data-i18n="download_title">Clinical Deployment</h2>
+                    <p class="subtitle" data-i18n="download_subtitle">Research-Grade | Offline-First | Privacy-Centric
+                        Architecture</p>
+
+                    <div class="info-box glass-panel-light">
+                        <div class="info-item">
+                            <span class="info-label">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                </svg>
+                                <span data-i18n="download_info_version">Version: 1.0.0 (Beta)</span>
+                            </span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                <span data-i18n="download_info_date">Release Date: Jan 10, 2026</span>
+                            </span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                                </svg>
+                                <span data-i18n="download_info_req">Requires: Android 5.0+</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <button class="btn-premium-download download-btn" id="downloadBtn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            style="width: 24px;">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span data-i18n="download_cta_main">Download APK</span>
+                    </button>
+
+                    <div class="secure-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <span data-i18n="download_secure_text">Secure & Direct Download Link</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 data-i18n="footer_about_title">About Renal Companion</h4>
+                    <p data-i18n="footer_about_text">A clinical-grade nutrition management platform for Chronic Kidney
+                        Disease patients, built on
+                        KDOQI guidelines and powered by modern AI.</p>
+                    <div class="footer-disclaimer">
+                        <strong data-i18n="footer_disclaimer">Medical Disclaimer:</strong> <span
+                            data-i18n="footer_disclaimer_text">This app is for informational purposes only and does not
+                            replace professional medical advice.</span>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_resources">Resources</h4>
+                    <ul>
+                        <li><a href="index.html#clinical" data-i18n="footer_resources_docs">Clinical Documentation</a>
+                        </li>
+                        <li><a href="index.html#download" data-i18n="footer_resources_download">Download APK</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_researchers">For Researchers</h4>
+                    <ul>
+                        <li><a href="researchers.html#researchers" data-i18n="footer_researchers_citation">Citation
+                                Guide</a></li>
+                        <li><a href="index.html#technology" data-i18n="footer_researchers_arch">Technical
+                                Architecture</a></li>
+                        <li><a href="mailto:ferasswed2022@gmail.com" data-i18n="footer_researchers_contact">Research
+                                Inquiries</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_legal">Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html" data-i18n="footer_legal_privacy">Privacy Policy</a></li>
+                        <li><a href="index.html#terms" data-i18n="footer_legal_terms">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright">&copy; 2026 Renal Companion. Designed for clinical excellence.</p>
+                <p data-i18n="footer_tagline">Built with precision for CKD patient care.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Download Modal -->
+    <div id="downloadModal" class="modal" style="display: none;">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <div class="modal-icon">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+            </div>
+            <h3 data-i18n="modal_title">Coming Soon!</h3>
+            <p data-i18n="modal_message">The app hasn't been officially released yet. The beta version will be available
+                soon. Stay tuned and follow us on LinkedIn to stay updated!</p>
+            <a href="https://www.linkedin.com/company/renal-companion" target="_blank"
+                class="btn btn-primary modal-follow-btn" data-i18n="modal_follow_btn">Follow on LinkedIn</a>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/js/utils.js"></script>
+    <script src="./assets/js/i18n.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/animations.js"></script>
+    <script src="./assets/js/gallery.js"></script>
+</body>
+
+</html>

@@ -61,6 +61,7 @@
             <!-- Desktop Menu -->
             <ul class="nav-menu" id="navMenu">
                 <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+                <li><a href="gallery.html" data-i18n="nav_gallery">Gallery</a></li>
                 <li><a href="methodology.html" data-i18n="nav_features">Methodology</a></li>
                 <li><a href="#technology" data-i18n="nav_technology">System Architecture</a></li>
                 <li><a href="#clinical" data-i18n="nav_clinical">Clinical Protocols</a></li>
@@ -994,75 +995,99 @@ static double calculateEGFR({
     </section>
 
     <!-- Download Section -->
-    <section class="download-section section-padding" id="download">
+    <!-- Premium Download Section -->
+    <section class="download-premium reveal-on-scroll" id="download">
         <div class="container">
-            <div class="section-header centered">
-                <h2 class="section-title" data-i18n="download_title">Clinical Deployment</h2>
-                <p class="section-subtitle" data-i18n="download_subtitle">Research-Grade | Offline-First |
-                    Privacy-Centric Architecture</p>
-            </div>
+            <div class="download-grid">
+                <!-- Installation Guide (Left Column) -->
+                <div class="installation-guide glass-panel">
+                    <h3 data-i18n="download_steps_title">Installation Steps</h3>
+                    <div class="steps-list">
+                        <div class="step-item">
+                            <span class="step-number">1</span>
+                            <p class="step-text" data-i18n="download_guide_1">Press the 'Download APK' button above</p>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-number">2</span>
+                            <p class="step-text" data-i18n="download_guide_2">Once the download completes, open the APK
+                                file</p>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-number">3</span>
+                            <p class="step-text" data-i18n="download_guide_3">Enable 'Install from Unknown Sources' if
+                                prompted</p>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-number">4</span>
+                            <p class="step-text" data-i18n="download_guide_4">Tap 'Install' and wait for the process to
+                                finish</p>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-number">5</span>
+                            <p class="step-text" data-i18n="download_guide_5">Open Renal Companion and start your
+                                journey!</p>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="download-container">
+                <!-- Download Card (Right Column) -->
                 <div class="download-card">
-                    <div class="download-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                            <polyline points="7 10 12 15 17 10"></polyline>
-                            <line x1="12" y1="15" x2="12" y2="3"></line>
-                        </svg>
-                    </div>
-                    <h3 data-i18n="download_heading">Download APK</h3>
-                    <p class="download-info">
-                        <strong><span data-i18n="download_version">Version:</span></strong> 1.0.0<br>
-                        <strong><span data-i18n="download_size">Size:</span></strong> ~25 MB<br>
-                        <strong><span data-i18n="download_requirements">Requirements:</span></strong> Android 7.0+
-                    </p>
-                    <a href="https://github.com/yourusername/renal_companion/releases/latest/download/app-release.apk"
-                        class="btn btn-primary btn-lg download-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                            <polyline points="7 10 12 15 17 10"></polyline>
-                            <line x1="12" y1="15" x2="12" y2="3"></line>
-                        </svg>
-                        <span data-i18n="download_btn">Download for Android</span>
-                    </a>
-                    <details class="install-guide">
-                        <summary data-i18n="download_guide_title">Installation Guide</summary>
-                        <ol>
-                            <li data-i18n="download_guide_1">Download the APK file</li>
-                            <li data-i18n="download_guide_2">Enable "Install from Unknown Sources" in Settings</li>
-                            <li data-i18n="download_guide_3">Open the APK file and tap "Install"</li>
-                            <li data-i18n="download_guide_4">Launch Renal Companion and complete onboarding</li>
-                        </ol>
-                    </details>
-                </div>
+                    <h2 data-i18n="download_title">Clinical Deployment</h2>
+                    <p class="subtitle" data-i18n="download_subtitle">Research-Grade | Offline-First | Privacy-Centric
+                        Architecture</p>
 
-                <div class="qr-section">
-                    <h4 data-i18n="download_qr_title">Scan to Download</h4>
-                    <div class="qr-placeholder">
-                        <svg viewBox="0 0 100 100" width="150" height="150">
-                            <rect fill="white" width="100" height="100" />
-                            <rect fill="black" x="10" y="10" width="10" height="10" />
-                            <rect fill="black" x="30" y="10" width="10" height="10" />
-                            <rect fill="black" x="50" y="10" width="10" height="10" />
-                            <rect fill="black" x="70" y="10" width="10" height="10" />
-                            <rect fill="black" x="10" y="30" width="10" height="10" />
-                            <rect fill="black" x="50" y="30" width="10" height="10" />
-                            <rect fill="black" x="70" y="30" width="10" height="10" />
-                            <rect fill="black" x="10" y="50" width="10" height="10" />
-                            <rect fill="black" x="30" y="50" width="10" height="10" />
-                            <rect fill="black" x="70" y="50" width="10" height="10" />
-                            <rect fill="black" x="10" y="70" width="10" height="10" />
-                            <rect fill="black" x="30" y="70" width="10" height="10" />
-                            <rect fill="black" x="50" y="70" width="10" height="10" />
-                            <rect fill="black" x="70" y="70" width="10" height="10" />
-                        </svg>
+                    <div class="info-box glass-panel-light">
+                        <div class="info-item">
+                            <span class="info-label">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                </svg>
+                                <span data-i18n="download_info_version">Version: 1.0.0 (Beta)</span>
+                            </span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                <span data-i18n="download_info_date">Release Date: Jan 10, 2026</span>
+                            </span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                                </svg>
+                                <span data-i18n="download_info_req">Requires: Android 5.0+</span>
+                            </span>
+                        </div>
                     </div>
-                    <p class="qr-caption" data-i18n="download_qr_caption">QR Code for mobile download</p>
+
+                    <button class="btn-premium-download download-btn" id="downloadBtn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            style="width: 24px;">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span data-i18n="download_cta_main">Download APK</span>
+                    </button>
+
+                    <div class="secure-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <span data-i18n="download_secure_text">Secure & Direct Download Link</span>
+                    </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- Download Modal -->
