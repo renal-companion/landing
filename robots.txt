@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://renal-companion.github.io/landing/sitemap.xml

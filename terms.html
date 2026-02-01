@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="terms_page_title">Terms of Use | Renal Companion</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+
+    <style>
+        .terms-hero {
+            padding: 120px 0 60px;
+            background: var(--neutral-50);
+            text-align: center;
+            border-bottom: 1px solid var(--neutral-200);
+        }
+
+        .legal-container {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 24px;
+        }
+
+        .legal-section {
+            margin-bottom: 48px;
+            background: white;
+            padding: 40px;
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--neutral-200);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .legal-section h2 {
+            font-family: var(--font-heading);
+            color: var(--primary-900);
+            font-size: 1.5rem;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid var(--primary-100);
+        }
+
+        .legal-text {
+            color: var(--neutral-700);
+            line-height: 1.8;
+            font-size: 1rem;
+            margin-bottom: 16px;
+        }
+
+        .legal-list {
+            list-style: none;
+            margin: 24px 0;
+        }
+
+        .legal-list li {
+            position: relative;
+            padding-inline-start: 24px;
+            margin-bottom: 12px;
+            color: var(--neutral-700);
+            line-height: 1.6;
+        }
+
+        .legal-list li::before {
+            content: "•";
+            color: var(--primary-500);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            /* LTR default */
+        }
+
+        [dir="rtl"] .legal-list li::before {
+            left: auto;
+            right: 0;
+        }
+
+        .alert-box {
+            background: #FEF2F2;
+            border: 1px solid #FCA5A5;
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            margin: 32px 0;
+            display: flex;
+            gap: 16px;
+            align-items: start;
+        }
+
+        .alert-icon {
+            color: #DC2626;
+            flex-shrink: 0;
+        }
+
+        .alert-content h3 {
+            color: #991B1B;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .alert-content p {
+            color: #7F1D1D;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="Renal Companion Logo" class="nav-logo-img">
+                </div>
+                <span class="brand-name" data-i18n="nav_brand_name">RenalCompanion</span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+                <li><a href="methodology.html" data-i18n="nav_features">Methodology</a></li>
+                <li><a href="index.html#technology" data-i18n="nav_technology">System Architecture</a></li>
+                <li><a href="index.html#clinical" data-i18n="nav_clinical">Clinical Protocols</a></li>
+                <li><a href="researchers.html" data-i18n="nav_researchers">For Researchers</a></li>
+            </ul>
+
+            <div class="nav-actions desktop-only">
+                <a href="#" class="lang-btn" aria-label="Switch Language">العربية</a>
+                <a href="index.html#download" class="nav-cta" data-i18n="nav_download">Download</a>
+            </div>
+
+            <div class="mobile-controls mobile-only">
+                <a href="#" class="lang-btn small" aria-label="Switch Language">العربية</a>
+                <button class="nav-toggle" id="navToggle">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="terms-hero">
+        <div class="container">
+            <h1 class="hero-title" data-i18n="terms_hero_title">Terms of Use</h1>
+            <p class="hero-subtitle" data-i18n="terms_hero_subtitle">Legal agreement and acceptable use policy</p>
+        </div>
+    </header>
+
+    <main class="legal-container">
+        <!-- Last Updated -->
+        <div style="text-align: center; margin-bottom: 40px; color: var(--neutral-500); font-size: 0.9rem;">
+            <span data-i18n="terms_last_updated">Last Updated: February 1, 2026</span>
+        </div>
+
+        <!-- 1. Introduction -->
+        <section class="legal-section">
+            <h2 data-i18n="terms_sec1_title">1. Introduction & Acceptance</h2>
+            <p class="legal-text" data-i18n="terms_sec1_text">By downloading, accessing, or using the Renal Companion
+                application ("the Service"), you agree to be bound by these Terms of Use. If you do not agree to these
+                terms, including the mandatory arbitration provision and class action waiver, do not use the
+                application.</p>
+        </section>
+
+        <!-- 2. Medical Disclaimer (CRITICAL) -->
+        <section class="legal-section" style="border-color: #FCA5A5;">
+            <div class="alert-box" style="margin-top: 0;">
+                <div class="alert-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                        <line x1="12" y1="9" x2="12" y2="13" />
+                        <line x1="12" y1="17" x2="12.01" y2="17" />
+                    </svg>
+                </div>
+                <div class="alert-content">
+                    <h3 data-i18n="terms_sec2_title">2. NO MEDICAL ADVICE</h3>
+                    <p data-i18n="terms_sec2_text">Renal Companion is a clinical informatics tool, not a doctor. The
+                        content provided is for informational and educational purposes only.</p>
+                </div>
+            </div>
+            <ul class="legal-list">
+                <li data-i18n="terms_sec2_li1">The App does NOT provide medical diagnoses or treatment advice.</li>
+                <li data-i18n="terms_sec2_li2">Calculations (eGFR, AjBW) are mathematical estimates and must be verified
+                    by a qualified healthcare professional.</li>
+                <li data-i18n="terms_sec2_li3">In case of a medical emergency, call your local emergency services
+                    immediately.</li>
+            </ul>
+        </section>
+
+        <!-- 3. User Responsibilities -->
+        <section class="legal-section">
+            <h2 data-i18n="terms_sec3_title">3. User Responsibilities</h2>
+            <p class="legal-text" data-i18n="terms_sec3_text">You are solely responsible for the accuracy of the data
+                you input into the system (e.g., weight, lab results, dialysis modality). The "Safety Guardrails" of the
+                application rely entirely on the precision of your input.</p>
+        </section>
+
+        <!-- 4. Intellectual Property -->
+        <section class="legal-section">
+            <h2 data-i18n="terms_sec4_title">4. Intellectual Property</h2>
+            <p class="legal-text" data-i18n="terms_sec4_text">The source code, architecture, and "Murshid AI" inference
+                logic are proprietary to Dr. Feras Swed. Reverse engineering is strictly prohibited.</p>
+            <p class="legal-text" data-i18n="terms_sec4_note"><strong>Research Exception:</strong> Anonymized datasets
+                may be used for academic research under our Open Science Data license, provided proper citation is
+                given.</p>
+        </section>
+
+        <!-- 5. Limitation of Liability -->
+        <section class="legal-section">
+            <h2 data-i18n="terms_sec5_title">5. Limitation of Liability</h2>
+            <p class="legal-text" data-i18n="terms_sec5_text">To the fullest extent permitted by law, Renal Companion
+                and its developers shall not be liable for any direct, indirect, incidental, or consequential damages
+                resulting from your use of the service or reliance on any information provided.</p>
+        </section>
+
+        <!-- Contact -->
+        <div style="text-align: center; margin-top: 60px;">
+            <p class="legal-text" data-i18n="terms_contact">Questions? Contact our Legal & Compliance Team:</p>
+            <a href="mailto:ferasswed2022@gmail.com" class="btn btn-primary"
+                style="display: inline-flex;">ferasswed2022@gmail.com</a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 data-i18n="footer_about_title">About Renal Companion</h4>
+                    <p data-i18n="footer_about_text">A clinical-grade nutrition management platform for Chronic Kidney
+                        Disease patients, built on
+                        KDOQI guidelines and powered by modern AI.</p>
+                    <div class="footer-disclaimer">
+                        <strong data-i18n="footer_disclaimer">Medical Disclaimer:</strong> <span
+                            data-i18n="footer_disclaimer_text">This app is for informational purposes only and does not
+                            replace professional medical advice.</span>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_resources">Resources</h4>
+                    <ul>
+                        <li><a href="index.html#clinical" data-i18n="footer_resources_docs">Clinical Documentation</a>
+                        </li>
+                        <li><a href="index.html#download" data-i18n="footer_resources_download">Download APK</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_researchers">For Researchers</h4>
+                    <ul>
+                        <li><a href="researchers.html" data-i18n="footer_researchers_citation">Citation Guide</a></li>
+                        <li><a href="index.html#technology" data-i18n="footer_researchers_arch">Technical
+                                Architecture</a></li>
+                        <li><a href="mailto:ferasswed2022@gmail.com" data-i18n="footer_researchers_contact">Research
+                                Inquiries</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_legal">Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html" data-i18n="footer_legal_privacy">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="active" data-i18n="footer_legal_terms">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright">&copy; 2026 Renal Companion. Designed for clinical excellence.</p>
+                <p data-i18n="footer_tagline">Built with precision for CKD patient care.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/utils.js"></script>
+    <script src="./assets/js/i18n.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
