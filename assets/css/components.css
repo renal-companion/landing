@@ -1582,12 +1582,14 @@
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(16, 185, 129, 0.2);
-    border-radius: var(--radius-xl);
+    border-radius: var(--radius-xl) var(--radius-xl) var(--radius-xl) 0;
     padding: var(--space-4);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     overflow: hidden;
-    min-width: 240px;
+    min-width: 200px; /* Reduced from 240px */
+    max-width: 100%; /* Ensure it doesn't overflow parent */
     margin-bottom: var(--space-4);
+    flex: 1; /* Allow flexible resizing */
 }
 
 .reasoning-aura {
@@ -1618,17 +1620,21 @@
 .reasoning-content-inner {
     position: relative;
     z-index: 2;
+    width: 100%; /* Ensure content respects container width */
 }
 
 .reasoning-status-text {
-    font-size: 0.95rem;
+    font-size: 0.85rem; /* Slightly reduced for mobile fit */
     font-weight: 600;
     color: var(--neutral-800);
     margin-bottom: var(--space-3);
     display: block;
     transition: opacity 0.4s ease;
     opacity: 1;
-    /* Explicitly visible by default */
+    white-space: normal; /* Force wrapping */
+    overflow-wrap: break-word; /* Prevent overflow */
+    word-break: break-word; /* Ensure long words break */
+    line-height: 1.4;
 }
 
 .reasoning-progress-track {
