@@ -1,125 +1,52 @@
-# Renal Companion Landing Page
+# Renal Companion | Clinical-Grade CKD Nutrition Management 🩺📱
 
-A world-class landing page for the Renal Companion CKD nutrition management application.
+[![Platform](https://img.shields.io/badge/Platform-Android-green?logo=android)](https://renal-companion.github.io/landing/)
+[![Tech Stack](https://img.shields.io/badge/Built%20With-Flutter%20%7C%20Dart-blue?logo=flutter)](https://flutter.dev)
+[![Architecture](https://img.shields.io/badge/Architecture-Clean%20%7C%20BLoC-purple)](https://bloclibrary.dev)
+[![Privacy](https://img.shields.io/badge/Privacy-Offline%20First-lightgrey)](https://renal-companion.github.io/landing/privacy.html)
+[![Clinical Standard](https://img.shields.io/badge/Standard-KDOQI%20Compliant-red)](https://www.kidney.org/professionals/KDOQI)
 
-## Features
+> **"Bridging the gap between Guideline-Based Theory and Real-World Patient Data."**
 
-- 🎨 **Premium Design**: Medical-grade aesthetic with modern glassmorphism
-- 📱 **Fully Responsive**: Optimized for all devices from mobile to desktop
-- 🌍 **Bilingual Support**: Dynamic English and Arabic (RTL) switching via i18n.js
-- ⚡ **Performance**: Lighthouse score 95+ across all metrics
-- ♿ **Accessible**: WCAG 2.1 AA compliant
-- 🎬 **Animated**: Smooth scroll animations and micro-interactions
+**Renal Companion** is a specialized clinical informatics platform designed to empower Chronic Kidney Disease (CKD) patients with medical-grade tools for nutritional management, lab tracking, and medication safety. Unlike generic fitness trackers, every algorithm in Renal Companion is strictly calibrated to **KDOQI 2024** and **KDIGO** clinical practice guidelines.
 
-## Structure
+## 🚀 Key Innovation: "Clinical Intelligence"
 
-```
-renal_companion_landing/
-├── index.html          # Landing page (Bilingual AR/EN)
-├── assets/
-│   ├── css/
-│   │   ├── main.css        # Core styles & design system
-│   │   ├── components.css  # Reusable UI components
-│   │   └── animations.css  # Animation definitions
-│   ├── js/
-│   │   ├── main.js         # Core functionality
-│   │   └── animations.js   # Scroll & interaction effects
-│   ├── images/
-│   │   ├── hero/           # Hero section visuals
-│   │   ├── features/       # Feature screenshots
-│   │   └── icons/          # Custom SVG icons
-│   └── downloads/
-│       └── app-release.apk # Android APK file
-└── README.md
-```
+Moving beyond standard probabilistic AI, Renal Companion employs a **Hybrid Inference Model**:
+1.  **Deterministic Layer:** A hard-coded clinical rule engine (Clinically-Constrained Grammar) that prevents "hallucinations" in nutrient calculations (Potassium, Phosphorus, Sodium).
+2.  **Probabilistic Layer:** An AI assistant (Murshid AI) that synthesizes complex medical advice within strict safety guardrails.
 
-## Local Development
+## 🌟 Core Features
 
-1. Clone the repository
-2. Open `index.html` in a modern browser
-3. For a local server:
-   ```bash
-   # Using Python
-python -m http.server 8000
-   
-   # Using Node.js
-   npx http-server
-   ```
+*   **Offline-First Architecture:** Complete data privacy with local-only storage (Isar NoSQL). No PHI leaves the device.
+*   **Renal-Specific Logic:** Automated calculation of `eGFR` (CKD-EPI 2021), `Adjusted Body Weight (AjBW)`, and `Dialysis Protein Needs`.
+*   **Vision-Based Auditing:** Scan grocery labels to detect hidden "Inorganic Phosphorus" additives.
+*   **Intervention Tracking:** Correlate dietary adherence with monthly lab trends (e.g., "See how your Phosphorus binder intake reduced PO4 levels").
 
-## Deployment to GitHub Pages
+## 🛠️ Technical Architecture
 
-1. Create a new repository on GitHub
-2. Push the landing page files:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial landing page"
-   git branch -M main
-   git remote add origin https://github.com/yourusername/renal-companion-landing.git
-   git push -u origin main
-   ```
-3. Enable GitHub Pages:
-   - Go to repository Settings
-   - Navigate to Pages section
-   - Select `main` branch as source
-   - Save
+Built by a **Senior Full-Stack Architect**, the system exemplifies modern software engineering standards:
+*   **Framework:** Flutter (Dark/Light mode native).
+*   **State Management:** BLoC (Business Logic Component) for predictable state flows.
+*   **Database:** Isar (High-performance NoSQL) with fully ACID transactions.
+*   **Code Structure:** Strict **Clean Architecture** (Presentation → Domain → Data) ensuring testability and scalability.
 
-Your landing page will be live at: `https://yourusername.github.io/renal-companion-landing/`
+## 👨‍⚕️ About the Author
 
-## APK Hosting
+**Dr. Feras Ezz-Addin Suwaid**
+*Senior Full-Stack Architect & Therapeutic Nutritionist*
 
-### Option 1: GitHub Releases
-1. Go to your repository > Releases
-2. Create a new release
-3. Upload the APK file
-4. Download URL will be: `https://github.com/yourusername/renal_companion/releases/latest/download/app-release.apk`
+A unique "Physician-Engineer" bridging the gap between clinical nephrology and advanced software engineering.
+*   **Founder:** Clinical Intelligence Platform
+*   **Expertise:** ASP.NET Core, Distributed Systems, Clinical Nutrition, Health-Tech.
 
-### Option 2: Direct in Repository
-- Place APK in `assets/downloads/app-release.apk`
-- Link directly from the landing page
+[My Profile & Portfolio](https://renal-companion.github.io/landing/about.html)
 
-## Customization
+## 📄 License & Legal
 
-### Colors
-Edit the CSS variables in `assets/css/main.css`:
-```css
-:root {
-    --primary-700: #0D7373;  /* Main brand color */
-    --clinical-600: #2563EB; /* Clinical blue */
-    /* ... */
-}
-```
+**Medical Disclaimer:** This tool is for informational purposes only and does not replace professional medical advice.
+*   [Privacy Policy](https://renal-companion.github.io/landing/privacy.html)
+*   [Terms of Use](https://renal-companion.github.io/landing/terms.html)
 
-### Content
-- Edit text via `assets/js/i18n.js` translation object
-- Replace images in `assets/images/`
-- Update download links to your actual GitHub repository
-
-### Analytics (Optional)
-Add Google Analytics or other tracking:
-```html
-<!-- Add before closing </head> tag -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-```
-
-## Performance Optimization
-
-- Images are lazy-loaded
-- Critical CSS is inlined
-- JavaScript is deferred
-- WebP format with fallbacks
-
-## Browser Support
-
-- Chrome/Edge (latest 2 versions)
-- Firefox (latest 2 versions)
-- Safari (latest 2 versions)
-- Mobile browsers (iOS Safari, Chrome Android)
-
-## License
-
-This landing page is part of the Renal Companion project.
-
-## Credits
-
-Designed and developed with clinical excellence in mind.
+---
+*Built with precision for CKD patient care.*
